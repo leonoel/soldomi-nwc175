@@ -1,0 +1,7 @@
+package nwcfile;
+
+public class NwcFileException extends Exception {
+  public NwcFileException(Exception e) {
+    super(e);
+  }
+}

@@ -1,0 +1,56 @@
+package nwcfile;
+
+import java.io.InputStream;
+import java.io.DataInputStream;
+import java.io.IOException;
+
+public class NwcStaff {
+  private String m_name;
+  private String m_group;
+
+  private NwcStaff() {
+    super();
+  }
+
+  public String getName() {
+    return m_name;
+  }
+
+  public void setName(String name) {
+    m_name = name;
+  }
+
+  public String getGroup() {
+    return m_group;
+  }
+
+  public void setGroup(String group) {
+    m_group = group;
+  }
+
+  public String toString() {
+    String endl = System.getProperty("line.separator");
+    StringBuilder builder = new StringBuilder();
+    builder.append("Name : " + m_name + endl);
+    return builder.toString();
+  }
+
+  public static NwcStaff fromNwcFileReader(NwcFileReader reader) throws NwcFileException {
+    NwcStaff staff = new NwcStaff();
+
+    staff.setName(reader.getNextField());
+    staff.setGroup(reader.getNextField());
+
+    byte endbar = reader.readByte();
+    byte muted = reader.readByte();
+    reader.skip(1);
+    byte channel = reader.readByte();
+    reader.skip(9);
+    byte staffType = reader.readByte();
+    reader.skip(1);
+    byte upperSize = reader.readByte();
+
+    return staff;
+  }
+
+}
