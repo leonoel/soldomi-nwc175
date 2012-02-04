@@ -89,6 +89,9 @@ public class NwcStaff {
     m_symbols.add(symbol);
   }
 
+  public void addEndingBar() {
+  }
+
   public String toString() {
     String endl = System.getProperty("line.separator");
     StringBuilder builder = new StringBuilder();
@@ -107,6 +110,13 @@ public class NwcStaff {
     builder.append("Lyrics count : " + m_lyricsCount + endl);
     builder.append("Color : " + m_color + endl);
     builder.append("Symbol count : " + m_symbolCount + endl);
+
+    builder.append("***** Symbols *****" + endl);
+    for (NwcStaffSymbol symbol : m_symbols) {
+      builder.append(symbol.toString());
+    }
+    builder.append("***** End symbols *****" + endl);
+
     return builder.toString();
   }
 
@@ -137,9 +147,12 @@ public class NwcStaff {
     short symbolCount = reader.readShort(); 
     staff.setSymbolCount(symbolCount);
 
-    for (int i = 0; i < symbolCount; i++) {
+    reader.skip(1);
+
+    for (int i = 1; i < symbolCount - 1; i++) {
       staff.addSymbol(NwcStaffSymbol.fromNwcFileReader(reader));
     }
+    staff.addEndingBar();
 
     return staff;
   }

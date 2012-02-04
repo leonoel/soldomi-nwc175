@@ -39,47 +39,71 @@ public class NwcFile {
   private int m_measureStart;
   private String m_margins;
 
-  private List<NwcFont> m_fonts;
-  private List<NwcStaff> m_staffList;
+  private List<NwcFont> m_fonts = new ArrayList<NwcFont>();
+  private List<NwcStaff> m_staves = new ArrayList<NwcStaff>();
 
-  private NwcFile(String company,
-		  String product,
-		  int minorVersion,
-		  int majorVersion,
-		  String name1,
-		  String name2,
-		  String title,
-		  String author,
-		  String copyright1,
-		  String copyright2,
-		  String comment,
-		  int measureStart,
-		  String margins,
-		  List<NwcFont> fonts,
-		  List<NwcStaff> staffList) {
-    m_company = company;
-    m_product = product;
-    m_company = company;
-    m_product = product;
+  public NwcFile() {
 
+  }
+
+  public void setCompany(String company) {
+    m_company = company;
+  }
+
+  public void setProduct(String product) {
+    m_product = product;
+  }
+
+  public void setMinorVersion(int minorVersion) {
     m_minorVersion = minorVersion;
+  }
+
+  public void setMajorVersion(int majorVersion) {
     m_majorVersion = majorVersion;
+  }
 
+  public void setName1(String name1) {
     m_name1 = name1;
+  }
+
+  public void setName2(String name2) {
     m_name2 = name2;
+  }
 
+  public void setTitle(String title) {
     m_title = title;
+  }
+
+  public void setAuthor(String author) {
     m_author = author;
+  }
 
+  public void setCopyright1(String copyright1) {
     m_copyright1 = copyright1;
+  }
+  
+  public void setCopyright2(String copyright2) {
     m_copyright2 = copyright2;
+  }
+
+  public void setComment(String comment) {
     m_comment = comment;
+  }
 
+  public void setMeasureStart(int measureStart) {
     m_measureStart = measureStart;
-    m_margins = margins;
+  }
 
-    m_fonts = new ArrayList<NwcFont>(fonts);
-    m_staffList = new ArrayList<NwcStaff>(staffList);
+  public void setMargins(String margins) {
+    m_margins = margins;
+  }
+  
+  public void addFont(NwcFont font) {
+    m_fonts.add(font);
+  }
+
+  public void addStaff(NwcStaff staff) {
+    m_staves.add(staff);
   }
 
   public static NwcFile fromInputStream(InputStream in) throws NwcFileException {
@@ -120,61 +144,48 @@ public class NwcFile {
   }
 
   public static NwcFile fromNwcFileReader(NwcFileReader reader) throws NwcFileException {
-    String company = reader.getNextField();
-    String product = reader.getNextField();
+    NwcFile nwc = new NwcFile();
+
+    nwc.setCompany(reader.getNextField());
+    nwc.setProduct(reader.getNextField());
+
     String version = reader.getNextField();
-    int minorVersion = version.getBytes()[0];
-    int majorVersion = version.getBytes()[1];
+    nwc.setMinorVersion(version.getBytes()[0]);
+    nwc.setMajorVersion(version.getBytes()[1]);
 
-    String name1 = reader.getNextField();
-    String name2 = reader.getNextField();
-
-    reader.getNextField();
-
-    String title = reader.getNextField();
-    String author = reader.getNextField();
-    String copyright1 = reader.getNextField();
-    String copyright2 = reader.getNextField();
-    String comment = reader.getNextField();
+    nwc.setName1(reader.getNextField());
+    nwc.setName2(reader.getNextField());
 
     reader.getNextField();
-    reader.getNextField();
 
-    int measureStart = reader.getNextField().getBytes()[0];
-    String margins = reader.getNextField();
+    nwc.setTitle(reader.getNextField());
+    nwc.setAuthor(reader.getNextField());
+    nwc.setCopyright1(reader.getNextField());
+    nwc.setCopyright2(reader.getNextField());
+    nwc.setComment(reader.getNextField());
 
     reader.getNextField();
     reader.getNextField();
+
+    nwc.setMeasureStart(reader.getNextField().getBytes()[0]);
+    nwc.setMargins(reader.getNextField());
+
+    reader.getNextField();
+    reader.getNextField();
     reader.getNextField();
 
-    List<NwcFont> fonts = new ArrayList<NwcFont>();
     for (int i = 0; i < 12; i++) {
-      fonts.add(NwcFont.fromNwcFileReader(reader));
+      nwc.addFont(NwcFont.fromNwcFileReader(reader));
     }
 
     reader.getNextField();
-    byte staffCount = reader.getNextField().getBytes()[0];
 
-    List<NwcStaff> staffList = new ArrayList<NwcStaff>();
+    byte staffCount = reader.getNextField().getBytes()[0];
     for (int i = 0; i < staffCount; i++) {
-      staffList.add(NwcStaff.fromNwcFileReader(reader));
+      nwc.addStaff(NwcStaff.fromNwcFileReader(reader));
     }
 
-    return new NwcFile(company,
-		       product,
-		       minorVersion,
-		       majorVersion,
-		       name1,
-		       name2,
-		       title,
-		       author,
-		       copyright1,
-		       copyright2,
-		       comment,
-		       measureStart,
-		       margins,
-		       fonts,
-		       staffList);
+    return nwc;
   }
 
   @Override
@@ -183,23 +194,17 @@ public class NwcFile {
     StringBuilder builder = new StringBuilder();
     builder.append("Company : " + m_company + endl);
     builder.append("Product : " + m_product + endl);
-
     builder.append("Version : " + m_majorVersion + "." + m_minorVersion + endl);
-    builder.append("Name 1: " + m_name1 + endl);
+    builder.append("Name 1 : " + m_name1 + endl);
     builder.append("Name 2 : " + m_name2 + endl);
-
     builder.append("Title : " + m_title + endl);
     builder.append("Author : " + m_author + endl);
-
     builder.append("Copyright 1 : " + m_copyright1 + endl);
     builder.append("Copyright 2 : " + m_copyright2 + endl);
     builder.append("Comment : " + m_comment + endl);
-
     builder.append("Measure start : " + m_measureStart + endl);
     builder.append("Margins : " + m_margins + endl);
-
     builder.append(endl);
-
     builder.append("***** Fonts *****" + endl);
     int i = 1;
     for(NwcFont font : m_fonts) {
@@ -207,14 +212,15 @@ public class NwcFile {
       builder.append(font.toString());
       i++;
     }
+    builder.append("***** End fonts *****" + endl);
 
-    builder.append("***** Staff list *****" + endl);
+    builder.append("***** Staves *****" + endl);
     i = 1;
-    for(NwcStaff staff : m_staffList) {
-      builder.append("Staff " + i + " :" + endl); 
+    for(NwcStaff staff : m_staves) {
       builder.append(staff.toString());
       i++;
     }
+    builder.append("***** End staves *****" + endl);
 
     return builder.toString();
   }
