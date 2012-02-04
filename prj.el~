@@ -1,9 +1,0 @@
-(jde-project-file-version "1.0")
-(jde-set-variables
- '(jde-project-name "default")
- '(jde-run-working-directory "~/atelier/nwcfile")
- '(jde-run-option-classpath (quote ("~/atelier/nwcfile/target/classes")))
- '(jde-compile-option-directory "~/atelier/nwcfile/target/classes")
- '(jde-compile-option-classpath (quote ("~/atelier/nwcfile/target/classes")))
- '(jde-compile-option-sourcepath (quote ("~/atelier/nwcfile/src/main/java")))
- '(jde-run-application-class "nwcfile.NwcFile"))
