@@ -2,3 +2,5 @@ prj.el
 *~
 *.class
 *.BAK
+*.nwc
+*.NWC
