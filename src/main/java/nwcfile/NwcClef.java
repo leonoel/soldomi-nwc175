@@ -4,79 +4,33 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NwcClef extends NwcStaffSymbol {
+
   public enum Key {
-    TREBLE(0x00),
-    BASS(0x01),
-    ALTO(0x02),
-    TENOR(0x03);
-
-    private static Map<Integer, Key> FROM_ID = initReverseEnum();
-
-    private static Map<Integer, Key> initReverseEnum () {
-      Map<Integer, Key> map = new HashMap<Integer, Key>();
-      for(Key item : values()) {
-	map.put(item.ID, item);
-      }
-      return map;
-    }
-
-    public static Key fromId(int id) throws NwcFileException {
-      if (!FROM_ID.containsKey(id)) {
-	throw new NwcFileException("Unknown Key id");
-      }
-      return FROM_ID.get(id);
-    }
-
-    public int ID;
-
-    Key(int id) {
-      this.ID = id;
-    }
-
+    TREBLE,
+    BASS,
+    ALTO,
+    TENOR;
   }
 
   public enum Octave {
-     NONE(0x00),
-     UP(0x01),
-     DOWN(0x02);
+     NONE,
+     UP,
+     DOWN;
+  }
 
-     private static Map<Integer, Octave> FROM_ID = initReverseEnum();
-
-     private static Map<Integer, Octave> initReverseEnum () {
-       Map<Integer, Octave> map = new HashMap<Integer, Octave>();
-       for(Octave item : values()) {
-   	map.put(item.ID, item);
-       }
-       return map;
-     }
-
-     public static Octave fromId(int id) throws NwcFileException {
-       if (!FROM_ID.containsKey(id)) {
-   	throw new NwcFileException("Unknown Octave id");
-       }
-       return FROM_ID.get(id);
-     }
-
-     public int ID;
-
-     Octave(int id) {
-       this.ID = id;
-     }
-   }
-
-   private Key m_key;
-   private Octave m_octave;
+  private Key m_key;
+  private Octave m_octave;
 
   public NwcClef() {
-    super(NwcStaffSymbolEnum.CLEF);
+    super(Symbol.CLEF);
   }
 
-  public void setKey(byte key) throws NwcFileException {
-    m_key = Key.fromId(key);
+  public void setKey(byte key) {
+    m_key = Key.values()[key];
   }
 
-  public void setOctave(byte octave) throws NwcFileException {
-    m_octave = Octave.fromId(octave);
+  public void setOctave(byte octave) {
+    m_octave = Octave.values()[octave];
   }
 
   @Override

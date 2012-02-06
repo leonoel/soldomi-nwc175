@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NwcStaffSymbol {
-  public enum NwcStaffSymbolEnum {
+  public enum Symbol implements NwcEnum {
     CLEF(0x00) {
       public NwcStaffSymbol fromNwcFileReader(NwcFileReader reader)
 	throws NwcFileException {
@@ -65,12 +65,6 @@ public class NwcStaffSymbol {
 	return new NwcStaffSymbol(this);
       }
     },
-    CHORD_STARTING_WITH_REST(0x12) {
-      public NwcStaffSymbol fromNwcFileReader(NwcFileReader reader)
-	throws NwcFileException {
-	return new NwcStaffSymbol(this);
-      }
-    },
     CHORD(0x0A) {
       public NwcStaffSymbol fromNwcFileReader(NwcFileReader reader)
 	throws NwcFileException {
@@ -112,44 +106,40 @@ public class NwcStaffSymbol {
 	throws NwcFileException {
 	return new NwcStaffSymbol(this);
       }
+    },
+    CHORD_STARTING_WITH_REST(0x12) {
+      public NwcStaffSymbol fromNwcFileReader(NwcFileReader reader)
+	throws NwcFileException {
+	return new NwcStaffSymbol(this);
+      }
     };
 
-    private static Map<Integer, NwcStaffSymbolEnum> FROM_ID = initReverseEnum();
+    private byte m_code;
 
-    private static Map<Integer, NwcStaffSymbolEnum> initReverseEnum () {
-      Map<Integer, NwcStaffSymbolEnum> map = new HashMap<Integer, NwcStaffSymbolEnum>();
-      for(NwcStaffSymbolEnum item : values()) {
-	map.put(item.ID, item);
-      }
-      return map;
+    Symbol(int code) {
+      m_code = (byte) code;
     }
 
-    public static NwcStaffSymbolEnum fromId(int id) throws NwcFileException {
-      if (!FROM_ID.containsKey(id)) {
-	throw new NwcFileException("Unknown staff symbol id");
-      }
-      return FROM_ID.get(id);
-    }
-
-    public int ID;
-
-    NwcStaffSymbolEnum(int id) {
-      this.ID = id;
+    @Override
+    public byte getCode() {
+      return m_code;
     }
 
     public abstract NwcStaffSymbol fromNwcFileReader(NwcFileReader reader)
       throws NwcFileException;
   }
 
+  private static final NwcEnumReverseMap<Symbol> SYMBOL_REVERSE_MAP = new NwcEnumReverseMap<Symbol>(Symbol.class);
+
   public static NwcStaffSymbol fromNwcFileReader(NwcFileReader reader)
     throws NwcFileException {
-    byte symbolId = reader.readByte();
-    return NwcStaffSymbolEnum.fromId(symbolId).fromNwcFileReader(reader);
+    byte code = reader.readByte();
+    return SYMBOL_REVERSE_MAP.get(code).fromNwcFileReader(reader);
   }
 
-  private NwcStaffSymbolEnum m_type;
+  private Symbol m_type;
 
-  public NwcStaffSymbol(NwcStaffSymbolEnum type) {
+  public NwcStaffSymbol(Symbol type) {
     super();
     m_type = type;
   }
