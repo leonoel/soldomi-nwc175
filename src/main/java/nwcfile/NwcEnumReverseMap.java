@@ -15,4 +15,8 @@ public class NwcEnumReverseMap<V extends Enum<V> & NwcEnum> {
   public V get(byte code) {
     return m_map.get(code);
   }
+
+  public boolean contains(byte code) {
+    return m_map.containsKey(code);
+  }
 }

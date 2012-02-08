@@ -3,7 +3,7 @@ package nwcfile;
 import java.util.HashMap;
 import java.util.Map;
 
-public class NwcClef extends NwcStaffSymbol {
+public class Clef extends SymbolAbstract {
 
   public enum Key {
     TREBLE,
@@ -21,8 +21,8 @@ public class NwcClef extends NwcStaffSymbol {
   private Key m_key;
   private Octave m_octave;
 
-  public NwcClef() {
-    super(Symbol.CLEF);
+  public Clef() {
+    super();
   }
 
   public void setKey(byte key) {
@@ -44,15 +44,20 @@ public class NwcClef extends NwcStaffSymbol {
     return builder.toString();
   }
 
-  public static NwcClef fromNwcFileReader(NwcFileReader reader)
+  public Clef marshall(NwcFileWriter writer)
     throws NwcFileException {
-    NwcClef clef = new NwcClef();
+    // TODO
+    return this;
+  }
+
+  public Clef unmarshall(NwcFileReader reader)
+    throws NwcFileException {
     reader.readByte();
     reader.readByte();
-    clef.setKey(reader.readByte());
+    setKey(reader.readByte());
     reader.readByte();
-    clef.setOctave(reader.readByte());
+    setOctave(reader.readByte());
     reader.readByte();
-    return clef;
+    return this;
   }
 }

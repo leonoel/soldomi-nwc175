@@ -1,28 +1,16 @@
 package nwcfile;
 
-public class NwcKeySignature extends NwcStaffSymbol{
+public class KeySignature extends SymbolAbstract {
 
   public enum Note {
-    A(0x01),
-    B(0x02),
-    C(0x04),
-    D(0x08),
-    E(0x10),
-    F(0x20),
-    G(0x40);
-
-    private byte m_value;
-
-    Note(int value) {
-      m_value = (byte) value;
-    }
+    A,B,C,D,E,F,G;
   }
 
   private boolean[] m_flats = new boolean[Note.values().length];
   private boolean[] m_sharps = new boolean[Note.values().length];
 
-  public NwcKeySignature () {
-    super(Symbol.KEY_SIGNATURE);
+  public KeySignature () {
+    super();
     for (Note note : Note.values()) {
       m_flats[note.ordinal()] = false;
       m_sharps[note.ordinal()] = false;
@@ -48,9 +36,14 @@ public class NwcKeySignature extends NwcStaffSymbol{
     return builder.toString();
   }
 
-  public static NwcKeySignature fromNwcFileReader(NwcFileReader reader)
+  public KeySignature marshall(NwcFileWriter writer) 
     throws NwcFileException {
-    NwcKeySignature keySignature = new NwcKeySignature();
+    // TODO
+    return this;
+  }
+
+  public KeySignature unmarshall(NwcFileReader reader)
+    throws NwcFileException {
     reader.skip(2);
     byte flatBits = reader.readByte();
     reader.skip(1);
@@ -60,11 +53,11 @@ public class NwcKeySignature extends NwcStaffSymbol{
     byte mask = 0;
     for (Note note : Note.values()) {
       mask = (byte) (mask << 1);
-      keySignature.setFlat(note, (flatBits & mask) != 0);
-      keySignature.setSharp(note, (sharpBits & mask) != 0);
+      setFlat(note, (flatBits & mask) != 0);
+      setSharp(note, (sharpBits & mask) != 0);
     }
 
-    return keySignature;
+    return this;
   }
 
 }

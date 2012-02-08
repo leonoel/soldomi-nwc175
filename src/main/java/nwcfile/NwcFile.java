@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.io.FileWriter;
 
-public class NwcFile {
+public class NwcFile implements NwcItem {
   private static final String HEADER_NWZ = "[NWZ]";
 
   private String m_company;
@@ -39,11 +39,10 @@ public class NwcFile {
   private int m_measureStart;
   private String m_margins;
 
-  private List<NwcFont> m_fonts = new ArrayList<NwcFont>();
-  private List<NwcStaff> m_staves = new ArrayList<NwcStaff>();
+  private List<Font> m_fonts = new ArrayList<Font>();
+  private List<Staff> m_staves = new ArrayList<Staff>();
 
   public NwcFile() {
-
   }
 
   public void setCompany(String company) {
@@ -98,11 +97,11 @@ public class NwcFile {
     m_margins = margins;
   }
   
-  public void addFont(NwcFont font) {
+  public void addFont(Font font) {
     m_fonts.add(font);
   }
 
-  public void addStaff(NwcStaff staff) {
+  public void addStaff(Staff staff) {
     m_staves.add(staff);
   }
 
@@ -140,52 +139,57 @@ public class NwcFile {
     InputStream input = new ByteArrayInputStream(buffer, 0, length);
     NwcFileReader reader = new NwcFileReader(input);
 
-    return fromNwcFileReader(reader);
+    return new NwcFile().unmarshall(reader);
   }
 
-  public static NwcFile fromNwcFileReader(NwcFileReader reader) throws NwcFileException {
-    NwcFile nwc = new NwcFile();
+  public NwcFile marshall(NwcFileWriter writer) 
+    throws NwcFileException {
+    // TODO
+    return this;
+  }
 
-    nwc.setCompany(reader.getNextField());
-    nwc.setProduct(reader.getNextField());
+  public NwcFile unmarshall(NwcFileReader reader)
+    throws NwcFileException {
+    setCompany(reader.readString());
+    setProduct(reader.readString());
 
-    String version = reader.getNextField();
-    nwc.setMinorVersion(version.getBytes()[0]);
-    nwc.setMajorVersion(version.getBytes()[1]);
+    String version = reader.readString();
+    setMinorVersion(version.getBytes()[0]);
+    setMajorVersion(version.getBytes()[1]);
 
-    nwc.setName1(reader.getNextField());
-    nwc.setName2(reader.getNextField());
+    setName1(reader.readString());
+    setName2(reader.readString());
 
-    reader.getNextField();
+    reader.readString();
 
-    nwc.setTitle(reader.getNextField());
-    nwc.setAuthor(reader.getNextField());
-    nwc.setCopyright1(reader.getNextField());
-    nwc.setCopyright2(reader.getNextField());
-    nwc.setComment(reader.getNextField());
+    setTitle(reader.readString());
+    setAuthor(reader.readString());
+    setCopyright1(reader.readString());
+    setCopyright2(reader.readString());
+    setComment(reader.readString());
 
-    reader.getNextField();
-    reader.getNextField();
+    reader.readString();
+    reader.readString();
 
-    nwc.setMeasureStart(reader.getNextField().getBytes()[0]);
-    nwc.setMargins(reader.getNextField());
+    setMeasureStart(reader.readString().getBytes()[0]);
+    setMargins(reader.readString());
 
-    reader.getNextField();
-    reader.getNextField();
-    reader.getNextField();
+    reader.readString();
+    reader.readString();
+    reader.readString();
 
     for (int i = 0; i < 12; i++) {
-      nwc.addFont(NwcFont.fromNwcFileReader(reader));
+      addFont(new Font().unmarshall(reader));
     }
 
-    reader.getNextField();
+    reader.readString();
 
-    byte staffCount = reader.getNextField().getBytes()[0];
+    byte staffCount = reader.readString().getBytes()[0];
     for (int i = 0; i < staffCount; i++) {
-      nwc.addStaff(NwcStaff.fromNwcFileReader(reader));
+      addStaff(new Staff().unmarshall(reader));
     }
 
-    return nwc;
+    return this;
   }
 
   @Override
@@ -207,7 +211,7 @@ public class NwcFile {
     builder.append(endl);
     builder.append("***** Fonts *****" + endl);
     int i = 1;
-    for(NwcFont font : m_fonts) {
+    for(Font font : m_fonts) {
       builder.append("Font " + i + " :" + endl); 
       builder.append(font.toString());
       i++;
@@ -216,7 +220,7 @@ public class NwcFile {
 
     builder.append("***** Staves *****" + endl);
     i = 1;
-    for(NwcStaff staff : m_staves) {
+    for(Staff staff : m_staves) {
       builder.append(staff.toString());
       i++;
     }

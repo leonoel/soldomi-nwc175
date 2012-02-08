@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
 
-public class NwcStaff {
+public class Staff implements NwcItem {
   private String m_name;
   private String m_group;
   private byte m_endBar;
@@ -23,10 +23,9 @@ public class NwcStaff {
   private int m_lyricsCount;
   private byte m_color;
   private int m_symbolCount;
-  private List<NwcStaffSymbol> m_symbols = new ArrayList<NwcStaffSymbol>();
+  private List<StaffSymbol> m_symbols = new ArrayList<StaffSymbol>();
 
-  private NwcStaff() {
-    super();
+  public Staff() {
   }
 
   public void setName(String name) {
@@ -85,7 +84,7 @@ public class NwcStaff {
     m_symbolCount = symbolCount;
   }
 
-  public void addSymbol(NwcStaffSymbol symbol) {
+  public void addSymbol(StaffSymbol symbol) {
     m_symbols.add(symbol);
   }
 
@@ -112,7 +111,7 @@ public class NwcStaff {
     builder.append("Symbol count : " + m_symbolCount + endl);
 
     builder.append("***** Symbols *****" + endl);
-    for (NwcStaffSymbol symbol : m_symbols) {
+    for (StaffSymbol symbol : m_symbols) {
       builder.append(symbol.toString());
     }
     builder.append("***** End symbols *****" + endl);
@@ -120,41 +119,46 @@ public class NwcStaff {
     return builder.toString();
   }
 
-  public static NwcStaff fromNwcFileReader(NwcFileReader reader) throws NwcFileException {
-    NwcStaff staff = new NwcStaff();
+  public Staff marshall(NwcFileWriter writer) 
+    throws NwcFileException {
+    // TODO
+    return this;
+  }
 
-    staff.setName(reader.getNextField());
-    staff.setGroup(reader.getNextField());
+  public Staff unmarshall(NwcFileReader reader)
+    throws NwcFileException {
+    setName(reader.readString());
+    setGroup(reader.readString());
 
-    staff.setEndBar(reader.readByte());
-    staff.setMuted(reader.readByte());
+    setEndBar(reader.readByte());
+    setMuted(reader.readByte());
     reader.skip(1);
-    staff.setChannel(reader.readByte());
+    setChannel(reader.readByte());
     reader.skip(9);
-    staff.setStaffType(reader.readByte());
+    setStaffType(reader.readByte());
     reader.skip(1);
-    staff.setUpperSize(reader.readByte());
+    setUpperSize(reader.readByte());
     reader.skip(1);
-    staff.setLowerSize(reader.readByte());
+    setLowerSize(reader.readByte());
     reader.skip(1);
-    staff.setLineCount(reader.readByte());
+    setLineCount(reader.readByte());
     reader.skip(4);
-    staff.setPartVolume(reader.readByte());
+    setPartVolume(reader.readByte());
     reader.skip(1);
-    staff.setStereoPan(reader.readByte());
+    setStereoPan(reader.readByte());
     reader.skip(7);
 
     short symbolCount = reader.readShort(); 
-    staff.setSymbolCount(symbolCount);
+    setSymbolCount(symbolCount);
 
     reader.skip(1);
 
     for (int i = 1; i < symbolCount - 1; i++) {
-      staff.addSymbol(NwcStaffSymbol.fromNwcFileReader(reader));
+      addSymbol(new StaffSymbol().unmarshall(reader));
     }
-    staff.addEndingBar();
+    addEndingBar();
 
-    return staff;
+    return this;
   }
 
 }

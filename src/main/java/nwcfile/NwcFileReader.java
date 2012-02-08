@@ -11,7 +11,7 @@ public class NwcFileReader {
     m_input = new DataInputStream(input);
   }
 
-  public String getNextField() throws NwcFileException {
+  public String readString() throws NwcFileException {
     StringBuffer buffer = new StringBuffer();
     int r;
     try {
