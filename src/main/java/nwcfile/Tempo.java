@@ -1,6 +1,6 @@
 package nwcfile;
 
-public class Tempo extends SymbolAbstract {
+public class Tempo extends Symbol {
   public enum Base {
     EIGHTH,
     DOTTED_EIGHTH,
@@ -9,6 +9,73 @@ public class Tempo extends SymbolAbstract {
     HALF,
     DOTTED_HALF;
   }
+
+  private final NwcItem BYTE3 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      reader.skip(1);
+      return this;
+    }
+  };
+
+
+  private final NwcItem BYTE5 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      setBpm(reader.readByte());
+      return this;
+    }
+  };
+
+  private final NwcItem BYTE6 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      reader.skip(1);
+      return this;
+    }
+  };
+
+  private final NwcItem BYTE7 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      setBase(Base.values()[reader.readByte()]);
+      return this;
+    }
+  };
+
+  private final NwcItem LAST_STRING = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      setText(reader.readString());
+      return this;
+    }
+  };
+
 
   private byte m_bpm;
   private Base m_base;
@@ -34,6 +101,9 @@ public class Tempo extends SymbolAbstract {
     String endl = System.getProperty("line.separator");
     StringBuilder builder = new StringBuilder();
     builder.append("***** Tempo *****" + endl);
+    builder.append("Bpm : " + m_bpm + endl);
+    builder.append("Base : " + m_base + endl);
+    builder.append("Text : " + m_text + endl);
     builder.append("***** End tempo *****" + endl);
     return builder.toString();
   }
@@ -46,11 +116,14 @@ public class Tempo extends SymbolAbstract {
 
   public Tempo unmarshall(NwcFileReader reader)
     throws NwcFileException {
-    reader.skip(4);
-    setBpm(reader.readByte());
-    reader.skip(1);
-    setBase(Base.values()[reader.readByte()]);
-    setText(reader.readString());
+    BYTE1.unmarshall(reader);
+    BYTE2.unmarshall(reader);
+    BYTE3.unmarshall(reader);
+    BYTE4.unmarshall(reader);
+    BYTE5.unmarshall(reader);
+    BYTE6.unmarshall(reader);
+    BYTE7.unmarshall(reader);
+    LAST_STRING.unmarshall(reader);
     return this;
   }
 

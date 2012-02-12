@@ -1,7 +1,7 @@
 package nwcfile;
 
-public class Dynamics extends SymbolAbstract {
-  public enum DynamicsEnum {
+public class Dynamics extends Symbol {
+  public enum DynamicsType {
     PIANISSIMO_POSSIBILE,
     PIANISSIMO,
     PIANO,
@@ -12,15 +12,57 @@ public class Dynamics extends SymbolAbstract {
     FORTISSIMO_POSSIBILE;
   }
 
-  private static final int MASK = Integer.parseInt("111", 2);
+  private final NwcItem BYTE3 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
 
-  private DynamicsEnum m_dynamicsEnum;
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      reader.skip(1);
+      return this;
+    }
+  };
+
+  private final NwcItem BYTE5 = new NwcItem() {
+    private static final int TYPE_START = 0;
+    private static final int TYPE_END = 3;
+
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      setDynamicsType(DynamicsType.values()[NwcUtils.subByte(reader.readByte(),
+							     TYPE_START,
+							     TYPE_END)]);
+      return this;
+    }
+  };
+
+  private final NwcItem BYTE6TO9 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      reader.skip(4);
+      return this;
+    }
+  };
+
+  private DynamicsType m_dynamicsType;
 
   public Dynamics() {
   }
 
-  public void setDynamicsEnum(DynamicsEnum dynamicsEnum) {
-    m_dynamicsEnum = dynamicsEnum;
+  public void setDynamicsType(DynamicsType dynamicsType) {
+    m_dynamicsType = dynamicsType;
   }
 
   @Override
@@ -28,7 +70,7 @@ public class Dynamics extends SymbolAbstract {
     String endl = System.getProperty("line.separator");
     StringBuilder builder = new StringBuilder();
     builder.append("***** Dynamics *****" + endl);
-    builder.append("Value : " + m_dynamicsEnum + endl);
+    builder.append("Value : " + m_dynamicsType + endl);
     builder.append("***** End dynamics *****" + endl);
     return builder.toString();
   }
@@ -41,9 +83,12 @@ public class Dynamics extends SymbolAbstract {
 
   public Dynamics unmarshall(NwcFileReader reader)
     throws NwcFileException {
-    reader.skip(4);
-    setDynamicsEnum(DynamicsEnum.values()[reader.readByte() & MASK]);
-    reader.skip(4);
+    BYTE1.unmarshall(reader);
+    BYTE2.unmarshall(reader);
+    BYTE3.unmarshall(reader);
+    BYTE4.unmarshall(reader);
+    BYTE5.unmarshall(reader);
+    BYTE6TO9.unmarshall(reader);
     return this;
   }
 

@@ -1,7 +1,7 @@
 package nwcfile;
 
-public class BarLine extends SymbolAbstract {
-  public enum BarLineEnum {
+public class BarLine extends Symbol {
+  public enum BarLineType {
     SINGLE,
     DOUBLE,
     SECTION_OPEN,
@@ -12,13 +12,30 @@ public class BarLine extends SymbolAbstract {
     LOCAL_REPEAT_CLOSE;
   }
 
-  private BarLineEnum m_type;
+  private final NwcItem BYTE3 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      try {
+	setType(BarLineType.values()[reader.readByte()]);
+      } catch (ArrayIndexOutOfBoundsException e) {
+	throw new NwcFileException(e);
+      }
+      return this;
+    }
+  };
+
+  private BarLineType m_type;
 
   public BarLine() {
     super();
   }
 
-  public void setType(BarLineEnum type) {
+  public void setType(BarLineType type) {
     m_type = type;
   }
 
@@ -42,13 +59,10 @@ public class BarLine extends SymbolAbstract {
   @Override
   public BarLine unmarshall(NwcFileReader reader)
     throws NwcFileException {
-    reader.skip(2);
-    try {
-      setType(BarLineEnum.values()[reader.readByte()]);
-    } catch (ArrayIndexOutOfBoundsException e) {
-      throw new NwcFileException(e);
-    }
-    reader.skip(1);
+    BYTE1.unmarshall(reader);
+    BYTE2.unmarshall(reader);
+    BYTE3.unmarshall(reader);
+    BYTE4.unmarshall(reader);
     return this;
   }
   

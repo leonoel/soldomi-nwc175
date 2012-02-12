@@ -1,26 +1,12 @@
 package nwcfile;
 
-import java.io.IOException;
-import java.io.FileInputStream;
-import java.io.File;
-import java.util.zip.Deflater;
-import java.io.PrintWriter;
-import java.io.FileOutputStream;
 import java.io.FileNotFoundException;
-import java.util.zip.Inflater;
-import java.util.zip.DataFormatException;
-import java.io.CharArrayReader;
-import java.io.Reader;
-import java.io.StringReader;
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
+import java.io.FileInputStream;
 import java.util.List;
 import java.util.ArrayList;
-import java.io.FileWriter;
+
 
 public class NwcFile implements NwcItem {
-  private static final String HEADER_NWZ = "[NWZ]";
-
   private String m_company;
   private String m_product;
 
@@ -105,43 +91,6 @@ public class NwcFile implements NwcItem {
     m_staves.add(staff);
   }
 
-  public static NwcFile fromInputStream(InputStream in) throws NwcFileException {
-    int length;
-    byte[] buffer;
-    byte[] bytes;
-    try {
-      bytes = new byte[in.available()];
-      in.read(bytes, 0, bytes.length);
-    } catch (IOException e) {
-      throw new NwcFileException(e);
-    }
-    if (HEADER_NWZ.equals(new String(bytes, 0, HEADER_NWZ.length()))) {
-      buffer  = new byte[bytes.length * 5];
-      Inflater inflater = new Inflater();
-      inflater.setInput(bytes, HEADER_NWZ.length() + 1, bytes.length - HEADER_NWZ.length() - 1);
-      try {
-	length = inflater.inflate(buffer);
-      } catch (DataFormatException e) {
-	throw new NwcFileException(e);
-      }
-    } else {
-      throw new NwcFileException("Bad header.");
-    }
-
-    try {
-      FileOutputStream fos = new FileOutputStream("uncompressed.nwc");
-      fos.write(buffer, 0, length);
-      fos.close();
-    } catch (IOException e) {
-      System.out.println("Could not write uncompressed file.");
-    }
-
-    InputStream input = new ByteArrayInputStream(buffer, 0, length);
-    NwcFileReader reader = new NwcFileReader(input);
-
-    return new NwcFile().unmarshall(reader);
-  }
-
   public NwcFile marshall(NwcFileWriter writer) 
     throws NwcFileException {
     // TODO
@@ -151,16 +100,18 @@ public class NwcFile implements NwcItem {
   public NwcFile unmarshall(NwcFileReader reader)
     throws NwcFileException {
     setCompany(reader.readString());
+    reader.skip(2);
     setProduct(reader.readString());
 
-    String version = reader.readString();
-    setMinorVersion(version.getBytes()[0]);
-    setMajorVersion(version.getBytes()[1]);
+    setMinorVersion(reader.readByte());
+    setMajorVersion(reader.readByte());
+
+    reader.skip(4);
 
     setName1(reader.readString());
     setName2(reader.readString());
 
-    reader.readString();
+    reader.skip(10);
 
     setTitle(reader.readString());
     setAuthor(reader.readString());
@@ -171,22 +122,31 @@ public class NwcFile implements NwcItem {
     reader.readString();
     reader.readString();
 
-    setMeasureStart(reader.readString().getBytes()[0]);
+    reader.skip(2);
+    setMeasureStart(reader.readByte());
+    reader.skip(1);
     setMargins(reader.readString());
 
-    reader.readString();
-    reader.readString();
-    reader.readString();
+    reader.skip(38);
 
     for (int i = 0; i < 12; i++) {
       addFont(new Font().unmarshall(reader));
     }
 
-    reader.readString();
+    reader.skip(4);
+    byte staffCount = reader.readByte();
+    reader.skip(1);
 
-    byte staffCount = reader.readString().getBytes()[0];
     for (int i = 0; i < staffCount; i++) {
       addStaff(new Staff().unmarshall(reader));
+    }
+
+    while (true) {
+      try {
+	System.out.println(reader.readByte());
+      } catch (NwcFileException e) {
+	break;
+      }
     }
 
     return this;
@@ -210,19 +170,14 @@ public class NwcFile implements NwcItem {
     builder.append("Margins : " + m_margins + endl);
     builder.append(endl);
     builder.append("***** Fonts *****" + endl);
-    int i = 1;
     for(Font font : m_fonts) {
-      builder.append("Font " + i + " :" + endl); 
       builder.append(font.toString());
-      i++;
     }
     builder.append("***** End fonts *****" + endl);
 
     builder.append("***** Staves *****" + endl);
-    i = 1;
     for(Staff staff : m_staves) {
       builder.append(staff.toString());
-      i++;
     }
     builder.append("***** End staves *****" + endl);
 
@@ -235,15 +190,17 @@ public class NwcFile implements NwcItem {
       System.exit(0);
     }
     String filePath = args[0];
+    NwcFile nwcFile = new NwcFile();
     try {
-      NwcFile nwcFile = fromInputStream(new FileInputStream(filePath));
-      System.out.println("***** File info *****");
-      System.out.println(nwcFile.toString());
+      NwcFileReader reader = new NwcFileReader(new FileInputStream(filePath));
+      nwcFile.unmarshall(reader);
     } catch (FileNotFoundException e) {
       System.out.println("File not found.");
     } catch (NwcFileException e) {
-      System.out.println(e.toString());
+      e.printStackTrace();
     }
+    System.out.println("***** File info *****");
+    System.out.println(nwcFile.toString());
   }
 
 }

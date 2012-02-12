@@ -8,4 +8,8 @@ public class NwcFileException extends Exception {
   public NwcFileException(Exception e) {
     super(e);
   }
+
+  public NwcFileException(String str, Exception e) {
+    super(str, e);
+  }
 }

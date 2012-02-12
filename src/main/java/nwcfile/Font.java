@@ -1,7 +1,5 @@
 package nwcfile;
 
-import java.io.InputStream;
-
 public class Font implements NwcItem {
   private String m_family;
   private int m_style;
@@ -20,8 +18,10 @@ public class Font implements NwcItem {
   public String toString() {
     String endl = System.getProperty("line.separator");
     StringBuilder builder = new StringBuilder();
+    builder.append("***** Font *****" + endl);
     builder.append("Family : " + m_family + endl);
     builder.append("Style : " + m_style + endl);
+    builder.append("***** End fonts *****" + endl);
     return builder.toString();
   }
 
@@ -34,7 +34,8 @@ public class Font implements NwcItem {
   public Font unmarshall(NwcFileReader reader)
     throws NwcFileException {
     setFamily(reader.readString());
-    setStyle(reader.readString().getBytes()[0]);
+    setStyle(reader.readShort());
+    reader.skip(2);
     return this;
   }
 }

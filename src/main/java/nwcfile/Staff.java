@@ -7,12 +7,27 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Staff implements NwcItem {
+  public enum EndBar {
+    SECTION_CLOSE,
+    MASTER_REPEAT_CLOSE,
+    SINGLE,
+    DOUBLE,
+    OPEN_HIDDEN;
+  }
+
+  public enum StaffType {
+    STANDARD,
+    UPPER_GRAND_STAFF,
+    LOWER_GRAND_STAFF,
+    ORCHESTRA;
+  }
+
   private String m_name;
   private String m_group;
-  private byte m_endBar;
+  private EndBar m_endBar;
   private boolean m_muted;
   private byte m_channel;
-  private byte m_staffType;
+  private StaffType m_staffType;
   private byte m_upperSize;
   private byte m_lowerSize;
   private byte m_lineCount;
@@ -23,7 +38,7 @@ public class Staff implements NwcItem {
   private int m_lyricsCount;
   private byte m_color;
   private int m_symbolCount;
-  private List<StaffSymbol> m_symbols = new ArrayList<StaffSymbol>();
+  private List<SymbolContainer> m_symbols = new ArrayList<SymbolContainer>();
 
   public Staff() {
   }
@@ -36,19 +51,19 @@ public class Staff implements NwcItem {
     m_group = group;
   }
 
-  public void setEndBar(byte endBar) {
+  public void setEndBar(EndBar endBar) {
     m_endBar = endBar;
   }
 
-  public void setMuted(byte muted) {
-    m_muted = (muted != 0);
+  public void setMuted(boolean muted) {
+    m_muted = muted;
   }
 
   public void setChannel(byte channel) {
     m_channel = channel;
   }
   
-  public void setStaffType(byte staffType) {
+  public void setStaffType(StaffType staffType) {
     m_staffType = staffType;
   }
 
@@ -84,16 +99,14 @@ public class Staff implements NwcItem {
     m_symbolCount = symbolCount;
   }
 
-  public void addSymbol(StaffSymbol symbol) {
+  public void addSymbol(SymbolContainer symbol) {
     m_symbols.add(symbol);
-  }
-
-  public void addEndingBar() {
   }
 
   public String toString() {
     String endl = System.getProperty("line.separator");
     StringBuilder builder = new StringBuilder();
+    builder.append("***** Staff *****" + endl);
     builder.append("Name : " + m_name + endl);
     builder.append("Group : " + m_group + endl);
     builder.append("End bar : " + m_endBar + endl);
@@ -111,10 +124,11 @@ public class Staff implements NwcItem {
     builder.append("Symbol count : " + m_symbolCount + endl);
 
     builder.append("***** Symbols *****" + endl);
-    for (StaffSymbol symbol : m_symbols) {
+    for (SymbolContainer symbol : m_symbols) {
       builder.append(symbol.toString());
     }
-    builder.append("***** End symbols *****" + endl);
+    builder.append("***** End Symbols *****" + endl);
+    builder.append("***** End Staff *****" + endl);
 
     return builder.toString();
   }
@@ -130,12 +144,24 @@ public class Staff implements NwcItem {
     setName(reader.readString());
     setGroup(reader.readString());
 
-    setEndBar(reader.readByte());
-    setMuted(reader.readByte());
+    try {
+      setEndBar(EndBar.values()[NwcUtils.subByte(reader.readByte(), 0, 3)]);
+    } catch (ArrayIndexOutOfBoundsException e) {
+      throw new NwcFileException(e);
+    }
+
+    setMuted(NwcUtils.subByte(reader.readByte(), 0, 1) != 0);
+
     reader.skip(1);
     setChannel(reader.readByte());
     reader.skip(9);
-    setStaffType(reader.readByte());
+
+    try {
+      setStaffType(StaffType.values()[NwcUtils.subByte(reader.readByte(), 0, 2)]);
+    } catch (ArrayIndexOutOfBoundsException e) {
+      throw new NwcFileException(e);
+    }
+
     reader.skip(1);
     setUpperSize(reader.readByte());
     reader.skip(1);
@@ -146,17 +172,14 @@ public class Staff implements NwcItem {
     setPartVolume(reader.readByte());
     reader.skip(1);
     setStereoPan(reader.readByte());
-    reader.skip(7);
+    reader.skip(8);
 
     short symbolCount = reader.readShort(); 
     setSymbolCount(symbolCount);
 
-    reader.skip(1);
-
     for (int i = 1; i < symbolCount - 1; i++) {
-      addSymbol(new StaffSymbol().unmarshall(reader));
+      addSymbol(new SymbolContainer().unmarshall(reader));
     }
-    addEndingBar();
 
     return this;
   }

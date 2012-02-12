@@ -3,7 +3,7 @@ package nwcfile;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Clef extends SymbolAbstract {
+public class Clef extends Symbol {
 
   public enum Key {
     TREBLE,
@@ -18,15 +18,58 @@ public class Clef extends SymbolAbstract {
      DOWN;
   }
 
+  private final NwcItem BYTE3 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      try {
+	setKey(Key.values()[reader.readByte()]);
+      } catch (ArrayIndexOutOfBoundsException e) {
+	throw new NwcFileException(e);
+      }
+      return this;
+    }
+  };
+
+  private final NwcItem BYTE5 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      setOctave(reader.readByte());
+      return this;
+    }
+  };
+
+  private final NwcItem BYTE6 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      reader.skip(1);
+      return this;
+    }
+  };
+
+
   private Key m_key;
   private Octave m_octave;
 
   public Clef() {
-    super();
   }
 
-  public void setKey(byte key) {
-    m_key = Key.values()[key];
+  public void setKey(Key key) {
+    m_key = key;
   }
 
   public void setOctave(byte octave) {
@@ -52,12 +95,12 @@ public class Clef extends SymbolAbstract {
 
   public Clef unmarshall(NwcFileReader reader)
     throws NwcFileException {
-    reader.readByte();
-    reader.readByte();
-    setKey(reader.readByte());
-    reader.readByte();
-    setOctave(reader.readByte());
-    reader.readByte();
+    BYTE1.unmarshall(reader);
+    BYTE2.unmarshall(reader);
+    BYTE3.unmarshall(reader);
+    BYTE4.unmarshall(reader);
+    BYTE5.unmarshall(reader);
+    BYTE6.unmarshall(reader);
     return this;
   }
 }

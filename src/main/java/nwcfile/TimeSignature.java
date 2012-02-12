@@ -1,6 +1,6 @@
 package nwcfile;
 
-public class TimeSignature extends SymbolAbstract {
+public class TimeSignature extends Symbol {
 
   public enum BeatValue {
     WHOLE,
@@ -10,6 +10,49 @@ public class TimeSignature extends SymbolAbstract {
     SIXTEENTH,
     THIRTY_SECOND;
   }
+
+  private final NwcItem BYTE3 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      setBeatCount(reader.readByte());
+      return this;
+    }
+  };
+
+  private final NwcItem BYTE5 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      try {
+	setBeatValue(BeatValue.values()[reader.readByte()]);
+      } catch (ArrayIndexOutOfBoundsException e) {
+	throw new NwcFileException(e);
+      }
+      return this;
+    }
+  };
+
+  private final NwcItem BYTE6TO8 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      reader.skip(3);
+      return this;
+    }
+  };
 
   private byte m_beatCount;
   private BeatValue m_beatValue;
@@ -41,15 +84,12 @@ public class TimeSignature extends SymbolAbstract {
 
   public TimeSignature unmarshall(NwcFileReader reader)
     throws NwcFileException {
-    reader.skip(2);
-    setBeatCount(reader.readByte());
-    reader.skip(1);
-    try {
-      setBeatValue(BeatValue.values()[reader.readByte()]);
-    } catch (ArrayIndexOutOfBoundsException e) {
-      throw new NwcFileException(e);
-    }
-    reader.skip(3);
+    BYTE1.unmarshall(reader);
+    BYTE2.unmarshall(reader);
+    BYTE3.unmarshall(reader);
+    BYTE4.unmarshall(reader);
+    BYTE5.unmarshall(reader);
+    BYTE6TO8.unmarshall(reader);
     return this;
   }
 

@@ -1,8 +1,32 @@
 package nwcfile;
 
-public class InstrumentPatch extends SymbolAbstract {
+public class InstrumentPatch extends Symbol {
 
+  private final NwcItem BYTE3 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
 
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      reader.skip(1);
+      return this;
+    }
+  };
+
+  private final NwcItem BYTE5TO10 = new NwcItem() {
+    public NwcItem marshall(NwcFileWriter writer)
+      throws NwcFileException {
+      return this;
+    }
+
+    public NwcItem unmarshall(NwcFileReader reader)
+      throws NwcFileException {
+      reader.skip(6);
+      return this;
+    }
+  };
 
   @Override
   public String toString() {
@@ -21,7 +45,11 @@ public class InstrumentPatch extends SymbolAbstract {
 
   public InstrumentPatch unmarshall(NwcFileReader reader)
     throws NwcFileException {
-    reader.skip(10);
+    BYTE1.unmarshall(reader);
+    BYTE2.unmarshall(reader);
+    BYTE3.unmarshall(reader);
+    BYTE4.unmarshall(reader);
+    BYTE5TO10.unmarshall(reader);
     return this;
   }
 
