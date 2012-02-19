@@ -31,6 +31,14 @@ public class NwcFile implements NwcItem {
   public NwcFile() {
   }
 
+  public String getTitle() {
+    return m_title;
+  }
+
+  public List<Staff> getStaves() {
+    return m_staves;
+  }
+
   public void setCompany(String company) {
     m_company = company;
   }
@@ -139,14 +147,6 @@ public class NwcFile implements NwcItem {
 
     for (int i = 0; i < staffCount; i++) {
       addStaff(new Staff().unmarshall(reader));
-    }
-
-    while (true) {
-      try {
-	System.out.println(reader.readByte());
-      } catch (NwcFileException e) {
-	break;
-      }
     }
 
     return this;

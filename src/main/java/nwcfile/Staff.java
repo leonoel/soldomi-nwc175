@@ -43,6 +43,10 @@ public class Staff implements NwcItem {
   public Staff() {
   }
 
+  public String getName() {
+    return m_name;
+  }
+
   public void setName(String name) {
     m_name = name;
   }
