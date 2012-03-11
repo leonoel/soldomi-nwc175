@@ -5,15 +5,15 @@ import java.util.ArrayList;
 
 public class Chord extends Symbol {
 
-  private Note m_note;
-  private List<Note> m_notes = new ArrayList<Note>();
+  private Segment m_segment;
+  private List<Segment> m_segments = new ArrayList<Segment>();
 
-  public void setNote(Note note) {
-    m_note = note;
+  public void setSegment(Segment segment) {
+    m_segment = segment;
   }
 
-  public void addNote(Note note) {
-    m_notes.add(note);
+  public void addSegment(Segment segment) {
+    m_segments.add(segment);
   }
 
   @Override
@@ -22,11 +22,11 @@ public class Chord extends Symbol {
     StringBuilder builder = new StringBuilder();
     builder.append("***** Chord *****" + endl);
     builder.append("***** Base note" + endl);
-    builder.append(m_note);
+    builder.append(m_segment);
     builder.append("***** End base note" + endl);
     builder.append("***** Notes *****" + endl);
-    for (Note note : m_notes) {
-      builder.append(note.toString());
+    for (Segment segment : m_segments) {
+      builder.append(segment.toString());
     }
     builder.append("***** End notes *****" + endl);
     builder.append("***** End chord *****" + endl);
@@ -43,12 +43,12 @@ public class Chord extends Symbol {
   @Override
   public Chord unmarshall(NwcFileReader reader)
     throws NwcFileException {
-    setNote(new Note().unmarshall(reader));
+    setSegment(new Segment().unmarshall(reader));
     byte noteCount = reader.readByte();
     reader.skip(1);
     for (int i = 0; i < noteCount; i++) {
       byte crap = reader.readByte();
-      addNote(new Note().unmarshall(reader));
+      addSegment(new Segment().unmarshall(reader));
     }
     return this;
   }

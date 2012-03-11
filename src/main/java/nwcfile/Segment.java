@@ -1,6 +1,6 @@
 package nwcfile;
 
-public class Note extends Symbol {
+public class Segment extends Symbol {
 
   public enum Duration {
     WHOLE,
@@ -201,7 +201,7 @@ public class Note extends Symbol {
 
       public NwcItem unmarshall(NwcFileReader reader)
 	throws NwcFileException {
-	setPitch(reader.readByte());
+	setRelativePitch((byte)(-reader.readByte()));
 	return this;
       }
   };
@@ -243,14 +243,18 @@ public class Note extends Symbol {
   private boolean m_grace;
   private byte m_slur;
 
-  private byte m_pitch;
+  private byte m_relativePitch;
   private Accidental m_accidental;
 
   private Beam m_beam;
   private Stem m_stem;
   private Triplet m_triplet;
   
-  public Note() {
+  public Segment() {
+  }
+
+  public Duration getDuration() {
+    return m_duration;
   }
 
   public void setDuration(Duration duration) {
@@ -285,8 +289,12 @@ public class Note extends Symbol {
     m_slur = slur;
   }
 
-  public void setPitch(byte pitch) {
-    m_pitch = pitch;
+  public byte getRelativePitch() {
+    return m_relativePitch;
+  }
+
+  public void setRelativePitch(byte relativePitch) {
+    m_relativePitch = relativePitch;
   }
 
   public void setAccidental(Accidental accidental) {
@@ -318,7 +326,7 @@ public class Note extends Symbol {
     builder.append("Tenuto : " + m_tenuto + endl);
     builder.append("Grace : " + m_grace + endl);
     builder.append("Slur : " + m_slur + endl);
-    builder.append("Pitch : " + m_pitch + endl);
+    builder.append("Relative Pitch : " + m_relativePitch + endl);
     builder.append("Accidental : " + m_accidental + endl);
     builder.append("Beam : " + m_beam + endl);
     builder.append("Stem : " + m_stem + endl);
@@ -327,13 +335,13 @@ public class Note extends Symbol {
     return builder.toString();
   }
 
-  public Note marshall(NwcFileWriter writer) 
+  public Segment marshall(NwcFileWriter writer) 
     throws NwcFileException {
     // TODO
     return this;
   }
 
-  public Note unmarshall(NwcFileReader reader)
+  public Segment unmarshall(NwcFileReader reader)
     throws NwcFileException {
     BYTE1.unmarshall(reader);
     BYTE2.unmarshall(reader);

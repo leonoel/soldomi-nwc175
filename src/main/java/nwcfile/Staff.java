@@ -51,6 +51,10 @@ public class Staff implements NwcItem {
     m_name = name;
   }
 
+  public List<SymbolContainer> getSymbols() {
+    return m_symbols;
+  }
+
   public void setGroup(String group) {
     m_group = group;
   }

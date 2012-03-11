@@ -47,12 +47,12 @@ public class SymbolContainer implements NwcItem {
     },
     NOTE(0x08) {
       public Symbol makeSymbol() {
-	return new Note();
+	return new Segment();
       }
     },
     REST(0x09) {
       public Symbol makeSymbol() {
-	return new Note();
+	return new Segment();
       }
     },
     CHORD(0x0A) {
@@ -113,18 +113,26 @@ public class SymbolContainer implements NwcItem {
   private static final NwcEnumReverseMap<SymbolType> SYMBOL_REVERSE_MAP = new NwcEnumReverseMap<SymbolType>(SymbolType.class);
 
   private SymbolType m_type;
-  private Symbol m_value;
+  private Symbol m_symbol;
 
   public SymbolContainer() {
     super();
+  }
+
+  public SymbolType getType() {
+    return m_type;
   }
 
   public void setType(SymbolType type) {
     m_type = type;
   }
 
-  public void setValue(Symbol value) {
-    m_value = value;
+  public Symbol getSymbol() {
+    return m_symbol;
+  }
+
+  public void setSymbol(Symbol symbol) {
+    m_symbol = symbol;
   }
 
   @Override
@@ -133,7 +141,7 @@ public class SymbolContainer implements NwcItem {
     StringBuilder builder = new StringBuilder();
     builder.append("***** Symbol *****" + endl);
     builder.append("Type : " + m_type + endl);
-    builder.append(m_value.toString());
+    builder.append(m_symbol.toString());
     builder.append("***** End Symbol *****" + endl);
     return builder.toString();
   }
@@ -152,7 +160,7 @@ public class SymbolContainer implements NwcItem {
     }
     SymbolType type = SYMBOL_REVERSE_MAP.get(typeByte);
     setType(type);
-    setValue(type.makeSymbol().unmarshall(reader));
+    setSymbol(type.makeSymbol().unmarshall(reader));
     return this;
   }
 

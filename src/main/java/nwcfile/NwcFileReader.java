@@ -10,6 +10,7 @@ import java.util.zip.Inflater;
 import java.io.ByteArrayOutputStream;
 
 public class NwcFileReader {
+  private static final boolean WRITE_INFLATED = false;
   private static final byte[] HEADER = "[NWZ]\u0000".getBytes();
 
   private DataInputStream m_data;
@@ -52,16 +53,20 @@ public class NwcFileReader {
 
     byte[] data = outputBuffer.toByteArray();
 
-    // To be deleted
+    if (WRITE_INFLATED)
+      writeInflated("inflated.nwc", data);
+
+    m_data = new DataInputStream(new ByteArrayInputStream(data));
+  }
+
+  private void writeInflated(String fileName, byte[] data) throws NwcFileException {
     try {
-      FileOutputStream fos = new FileOutputStream("uncompressed.nwc");
+      FileOutputStream fos = new FileOutputStream(fileName);
       fos.write(data);
       fos.close();
     } catch (IOException e) {
-      System.out.println("Could not write uncompressed file.");
+      throw new NwcFileException(e);
     }
-
-    m_data = new DataInputStream(new ByteArrayInputStream(data));
   }
 
   public String readString() throws NwcFileException {

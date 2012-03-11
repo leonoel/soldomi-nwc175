@@ -1,10 +1,10 @@
 package nwcfile;
 
 public class ChordStartingWithRest extends Symbol {
-  private Note m_note;
+  private Segment m_segment;
   
-  public void setNote(Note note) {
-    m_note = note;
+  public void setSegment(Segment segment) {
+    m_segment = segment;
   }
 
   public ChordStartingWithRest marshall(NwcFileWriter writer) 
@@ -15,7 +15,7 @@ public class ChordStartingWithRest extends Symbol {
 
   public ChordStartingWithRest unmarshall(NwcFileReader reader)
     throws NwcFileException {
-    setNote(new Note().unmarshall(reader));
+    setSegment(new Segment().unmarshall(reader));
     return this;
   }
 }

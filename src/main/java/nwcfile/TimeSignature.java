@@ -57,8 +57,16 @@ public class TimeSignature extends Symbol {
   private byte m_beatCount;
   private BeatValue m_beatValue;
 
+  public byte getBeatCount() {
+    return m_beatCount;
+  }
+
   public void setBeatCount(byte beatCount) {
     m_beatCount = beatCount;
+  }
+
+  public BeatValue getBeatValue() {
+    return m_beatValue;
   }
 
   public void setBeatValue(BeatValue beatValue) {

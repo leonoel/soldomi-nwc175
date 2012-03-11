@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Clef extends Symbol {
 
-  public enum Key {
+  public enum Symbol {
     TREBLE,
     BASS,
     ALTO,
@@ -27,7 +27,7 @@ public class Clef extends Symbol {
     public NwcItem unmarshall(NwcFileReader reader)
       throws NwcFileException {
       try {
-	setKey(Key.values()[reader.readByte()]);
+	setSymbol(Symbol.values()[reader.readByte()]);
       } catch (ArrayIndexOutOfBoundsException e) {
 	throw new NwcFileException(e);
       }
@@ -43,7 +43,7 @@ public class Clef extends Symbol {
 
     public NwcItem unmarshall(NwcFileReader reader)
       throws NwcFileException {
-      setOctave(reader.readByte());
+      setOctave(Octave.values()[reader.readByte()]);
       return this;
     }
   };
@@ -62,18 +62,26 @@ public class Clef extends Symbol {
   };
 
 
-  private Key m_key;
+  private Symbol m_symbol;
   private Octave m_octave;
 
   public Clef() {
   }
 
-  public void setKey(Key key) {
-    m_key = key;
+  public Symbol getSymbol() {
+    return m_symbol;
   }
 
-  public void setOctave(byte octave) {
-    m_octave = Octave.values()[octave];
+  public Octave getOctave() {
+    return m_octave;
+  }
+
+  public void setSymbol(Symbol symbol) {
+    m_symbol = symbol;
+  }
+
+  public void setOctave(Octave octave) {
+    m_octave = octave;
   }
 
   @Override
@@ -81,7 +89,7 @@ public class Clef extends Symbol {
     String endl = System.getProperty("line.separator");
     StringBuilder builder = new StringBuilder();
     builder.append("***** Clef *****" + endl);
-    builder.append("Key : " + m_key + endl);
+    builder.append("Symbol : " + m_symbol + endl);
     builder.append("Octave : " + m_octave + endl);
     builder.append("***** End clef *****" + endl);
     return builder.toString();
