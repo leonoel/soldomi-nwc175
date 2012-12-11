@@ -301,6 +301,10 @@ public class Segment extends Symbol {
     m_accidental = accidental;
   }
 
+  public Accidental getAccidental() {
+    return m_accidental;
+  }
+
   public void setBeam(Beam beam) {
     m_beam = beam;
   }
