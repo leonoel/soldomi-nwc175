@@ -1,0 +1,5074 @@
+***** File info *****
+Company : [NoteWorthy ArtWare]
+Product : [NoteWorthy Composer]
+Version : 1.75
+Name 1 : N/A
+Name 2 : Aanwh
+Title : Chinatown
+Author : Nat McIntosh
+Copyright 1 : Written by Laden 
+Copyright 2 : Palo Alto, March 2010
+Comment : 
+Measure start : 1
+Margins : 0.50000000 0.50000000 0.50000000 0.50000000
+
+***** Fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 2563
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 2049
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 1792
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 6145
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 3072
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 2048
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 2048
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 2048
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 2048
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 2048
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 2048
+***** End fonts *****
+***** Font *****
+Family : Times New Roman
+Style : 2048
+***** End fonts *****
+***** End fonts *****
+***** Staves *****
+***** Staff *****
+Name : Souba
+Group : Standard
+End bar : SECTION_CLOSE
+Muted : false
+Channel : 0
+Staff type : STANDARD
+Upper size : -12
+Lower size : 12
+Line count : 5
+Layer : 0
+Part volume : 127
+Stereo pan : 64
+Lyrics count : 0
+Color : 0
+Symbol count : 309
+***** Symbols *****
+***** Symbol *****
+Type : CLEF
+***** Clef *****
+Symbol : BASS
+Octave : NONE
+***** End clef *****
+***** End Symbol *****
+***** Symbol *****
+Type : TIME_SIGNATURE
+***** Repeat *****
+Byte count : 4
+Byte value : QUARTER
+***** End repeat *****
+***** End Symbol *****
+***** Symbol *****
+Type : REST
+***** Note *****
+Duration : SIXTEENTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : DOUBLE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : TEMPO_VARIANCE
+nwcfile.TempoVariance@fbb41d7***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : TEMPO_VARIANCE
+nwcfile.TempoVariance@4edf9252***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : TEMPO_VARIANCE
+nwcfile.TempoVariance@37ff6df2***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 9
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 10
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 9
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : TEMPO_VARIANCE
+nwcfile.TempoVariance@628b4796***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : TEMPO_VARIANCE
+nwcfile.TempoVariance@2608fb65***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 11
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 10
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 11
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 12
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 14
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 13
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 11
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 12
+Accidental : FLAT
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 10
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : TEMPO_VARIANCE
+nwcfile.TempoVariance@17b0b765***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : TEMPO_VARIANCE
+nwcfile.TempoVariance@52d85409***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : REST
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 10
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 11
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 12
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 13
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 11
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 10
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 9
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : true
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : true
+Slur : 0
+Relative Pitch : -4
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -2
+Accidental : FLAT
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -2
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : REST
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : FLAT
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : REST
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 9
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 10
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : QUARTER
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 10
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : QUARTER
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : TEMPO_VARIANCE
+nwcfile.TempoVariance@7875455c***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 11
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 10
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 9
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : FLAT
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : FLAT
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : FLAT
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 11
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 10
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 9
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 8
+Accidental : FLAT
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 4
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 5
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 7
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 6
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : true
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 2
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : true
+Slur : 0
+Relative Pitch : -4
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -3
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -2
+Accidental : FLAT
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -2
+Accidental : NATURAL
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : NOTE
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : -1
+Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : REST
+***** Note *****
+Duration : EIGHTH
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** End Symbols *****
+***** End Staff *****
+***** End staves *****
+

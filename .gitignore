@@ -1,5 +1,7 @@
 prj.el
 *~
+*.swp
 *.class
 *.BAK
-build/
+*.jar
+
