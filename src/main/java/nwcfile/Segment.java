@@ -138,11 +138,11 @@ public class Segment extends Symbol {
 	if (NwcUtils.subByte(b,
 			     SINGLE_DOT_START,
 			     SINGLE_DOT_END) != 0) {
-	  dots = Dots.SINGLE;
+	  dots = Dots.DOUBLE;
 	} else if (NwcUtils.subByte(b,
 				    DOUBLE_DOT_START,
 				    DOUBLE_DOT_END) != 0) {
-	  dots = Dots.DOUBLE;
+	  dots = Dots.SINGLE;
 	} else {
 	  dots = Dots.NONE;
 	}
@@ -263,6 +263,10 @@ public class Segment extends Symbol {
 
   public void setDots(Dots dots) {
     m_dots = dots;
+  }
+
+  public Dots getDots() {
+    return m_dots;
   }
 
   public void setTie(boolean tie) {

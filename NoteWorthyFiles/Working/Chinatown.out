@@ -116,7 +116,7 @@ Triplet : NONE
 Type : NOTE
 ***** Note *****
 Duration : EIGHTH
-Dots : DOUBLE
+Dots : SINGLE
 Tie : false
 Staccato : false
 Accent : false
@@ -564,7 +564,7 @@ Triplet : NONE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@fbb41d7***** End Symbol *****
+nwcfile.TempoVariance@4edf9252***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -627,7 +627,7 @@ Type : SINGLE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@4edf9252***** End Symbol *****
+nwcfile.TempoVariance@37ff6df2***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -1020,7 +1020,7 @@ Triplet : NONE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@37ff6df2***** End Symbol *****
+nwcfile.TempoVariance@628b4796***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -1401,7 +1401,7 @@ Triplet : NONE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@628b4796***** End Symbol *****
+nwcfile.TempoVariance@2608fb65***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -1554,7 +1554,7 @@ Triplet : NONE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@2608fb65***** End Symbol *****
+nwcfile.TempoVariance@17b0b765***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -1893,7 +1893,7 @@ Triplet : NONE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@17b0b765***** End Symbol *****
+nwcfile.TempoVariance@52d85409***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -1986,7 +1986,7 @@ Triplet : NONE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@52d85409***** End Symbol *****
+nwcfile.TempoVariance@7875455c***** End Symbol *****
 ***** Symbol *****
 Type : BAR_LINE
 ***** Bar line *****
@@ -3771,7 +3771,7 @@ Triplet : NONE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@7875455c***** End Symbol *****
+nwcfile.TempoVariance@5b1cd8cc***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
