@@ -115,5 +115,20 @@ public class KeySignature extends Symbol {
     BYTE6TO12.unmarshall(reader);
     return this;
   }
-
+  
+  /* Adam 2012.12.13: procedures for @NoteWar/app/utils/nwcStaffImporter.java */
+  public boolean areSomeFlat() {
+    for (Note note : Note.values()) {
+      if (m_flats[note.ordinal()]) return true;
+    }
+    return false;
+  }
+  public boolean areSomeSharp() {
+    for (Note note : Note.values()) {
+      if (m_sharps[note.ordinal()]) return true;
+    }
+    return false;
+  }
+  public boolean[] getFlats()  {return m_flats;}
+  public boolean[] getSharps() {return m_sharps;}
 }

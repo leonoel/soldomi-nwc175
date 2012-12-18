@@ -1,0 +1,29 @@
+CadavreExquis.nwc:
+- Triplets!!
+
+Chinatown.nwc:
+- Stems down
+- Automatic Beam
+
+GrodardDong.nwc:
+- Tempo Staff breaks the output. I think dealing with the tempo info is enough!!!!
+- No time signature is provided. Should deal with this automatically!!
+- Notes positions are ugly
+- Measure have to be enlarged when too many notes are present (second measure for example) 
+- Different key signatures for each instrument!!!!
+
+LaGrasseBandeTeMouilleLaChatte.nwc:
+- No output so far. Certainly due to Tempo Segment at each Staff.
+- Only one measure detected in /jsonapi/tunes/${tuneId}/
+- Deal with text. See VexFlow exemples...
+
+Percu.nwc: 
+- Can't see the line entirely. Make use of the sliding bar.
+
+TakeFifteen.nwc:
+- Multiple Problems. Doesn't deal with lines without measures. 
+
+test.nwc:
+- A larger space is needed between the signatures and the first note. 
+- Same remark with the bars and the first note of each measure. 
+

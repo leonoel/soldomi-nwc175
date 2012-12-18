@@ -3,11 +3,11 @@ Company : [NoteWorthy ArtWare]
 Product : [NoteWorthy Composer]
 Version : 1.75
 Name 1 : N/A
-Name 2 : Ezix
-Title : 
-Author : NoteWorthy Composer
-Copyright 1 : Copyright © 2011 NoteWorthy Software, Inc.
-Copyright 2 : All Rights Reserved
+Name 2 : Dzvix
+Title : Cadavre Exquis
+Author : Kipu
+Copyright 1 : Free Music Sheet
+Copyright 2 : NoteWar
 Comment : 
 Measure start : 1
 Margins : 0.50000000 0.50000000 0.50000000 0.50000000
@@ -64,39 +64,6 @@ Style : 2048
 ***** End fonts *****
 ***** Staves *****
 ***** Staff *****
-Name : Clarinette
-Group : Standard
-End bar : SECTION_CLOSE
-Muted : false
-Channel : 0
-Staff type : STANDARD
-Upper size : -12
-Lower size : 12
-Line count : 5
-Layer : 0
-Part volume : 127
-Stereo pan : 64
-Lyrics count : 0
-Color : 0
-Symbol count : 4
-***** Symbols *****
-***** Symbol *****
-Type : CLEF
-***** Clef *****
-Symbol : TREBLE
-Octave : NONE
-***** End clef *****
-***** End Symbol *****
-***** Symbol *****
-Type : KEY_SIGNATURE
-***** Key signature *****
-Flats :
-Sharps : C F
-***** End key signature *****
-***** End Symbol *****
-***** End Symbols *****
-***** End Staff *****
-***** Staff *****
 Name : Sax
 Group : Standard
 End bar : SECTION_CLOSE
@@ -111,7 +78,7 @@ Part volume : 127
 Stereo pan : 64
 Lyrics count : 0
 Color : 0
-Symbol count : 217
+Symbol count : 219
 ***** Symbols *****
 ***** Symbol *****
 Type : CLEF
@@ -124,8 +91,22 @@ Octave : NONE
 Type : KEY_SIGNATURE
 ***** Key signature *****
 Flats :
-Sharps : C F
+Sharps : A B C D E F G
 ***** End key signature *****
+***** End Symbol *****
+***** Symbol *****
+Type : KEY_SIGNATURE
+***** Key signature *****
+Flats : A B C D E F G
+Sharps :
+***** End key signature *****
+***** End Symbol *****
+***** Symbol *****
+Type : TIME_SIGNATURE
+***** Repeat *****
+Byte count : 4
+Byte value : QUARTER
+***** End repeat *****
 ***** End Symbol *****
 ***** Symbol *****
 Type : REST
@@ -1305,7 +1286,7 @@ Type : SINGLE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@5bc935cc***** End Symbol *****
+nwcfile.TempoVariance@68dd6317***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -2783,7 +2764,7 @@ Type : LOCAL_REPEAT_OPEN
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@76eb1327***** End Symbol *****
+nwcfile.TempoVariance@1e94b0ca***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -3311,7 +3292,7 @@ Part volume : 127
 Stereo pan : 64
 Lyrics count : 0
 Color : 0
-Symbol count : 176
+Symbol count : 177
 ***** Symbols *****
 ***** Symbol *****
 Type : CLEF
@@ -3326,6 +3307,13 @@ Type : KEY_SIGNATURE
 Flats :
 Sharps : C F
 ***** End key signature *****
+***** End Symbol *****
+***** Symbol *****
+Type : TIME_SIGNATURE
+***** Repeat *****
+Byte count : 4
+Byte value : QUARTER
+***** End repeat *****
 ***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
@@ -4577,7 +4565,7 @@ Type : SINGLE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@4336a26f***** End Symbol *****
+nwcfile.TempoVariance@33e2ad75***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -5932,7 +5920,7 @@ Part volume : 127
 Stereo pan : 64
 Lyrics count : 0
 Color : 0
-Symbol count : 127
+Symbol count : 128
 ***** Symbols *****
 ***** Symbol *****
 Type : CLEF
@@ -5947,6 +5935,13 @@ Type : KEY_SIGNATURE
 Flats :
 Sharps : C F
 ***** End key signature *****
+***** End Symbol *****
+***** Symbol *****
+Type : TIME_SIGNATURE
+***** Repeat *****
+Byte count : 4
+Byte value : QUARTER
+***** End repeat *****
 ***** End Symbol *****
 ***** Symbol *****
 Type : REST
@@ -7414,7 +7409,7 @@ Type : SINGLE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@37e247e2***** End Symbol *****
+nwcfile.TempoVariance@66e9f6ef***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -7790,7 +7785,7 @@ Part volume : 127
 Stereo pan : 64
 Lyrics count : 0
 Color : 0
-Symbol count : 111
+Symbol count : 112
 ***** Symbols *****
 ***** Symbol *****
 Type : CLEF
@@ -7805,6 +7800,13 @@ Type : KEY_SIGNATURE
 Flats :
 Sharps : C F
 ***** End key signature *****
+***** End Symbol *****
+***** Symbol *****
+Type : TIME_SIGNATURE
+***** Repeat *****
+Byte count : 4
+Byte value : QUARTER
+***** End repeat *****
 ***** End Symbol *****
 ***** Symbol *****
 Type : REST
@@ -8948,7 +8950,7 @@ Type : SINGLE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@68dd6317***** End Symbol *****
+nwcfile.TempoVariance@a52f9b2***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -9348,7 +9350,7 @@ Part volume : 127
 Stereo pan : 64
 Lyrics count : 0
 Color : 0
-Symbol count : 214
+Symbol count : 215
 ***** Symbols *****
 ***** Symbol *****
 Type : CLEF
@@ -9363,6 +9365,13 @@ Type : KEY_SIGNATURE
 Flats :
 Sharps : C F
 ***** End key signature *****
+***** End Symbol *****
+***** Symbol *****
+Type : TIME_SIGNATURE
+***** Repeat *****
+Byte count : 4
+Byte value : QUARTER
+***** End repeat *****
 ***** End Symbol *****
 ***** Symbol *****
 Type : REST
@@ -10758,7 +10767,7 @@ Type : SINGLE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@1e94b0ca***** End Symbol *****
+nwcfile.TempoVariance@4d871a69***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -11804,7 +11813,7 @@ Type : LOCAL_REPEAT_OPEN
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@33e2ad75***** End Symbol *****
+nwcfile.TempoVariance@60d70b42***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -12470,7 +12479,7 @@ Part volume : 127
 Stereo pan : 64
 Lyrics count : 0
 Color : 0
-Symbol count : 292
+Symbol count : 293
 ***** Symbols *****
 ***** Symbol *****
 Type : CLEF
@@ -12485,6 +12494,13 @@ Type : KEY_SIGNATURE
 Flats :
 Sharps : C F
 ***** End key signature *****
+***** End Symbol *****
+***** Symbol *****
+Type : TIME_SIGNATURE
+***** Repeat *****
+Byte count : 4
+Byte value : QUARTER
+***** End repeat *****
 ***** End Symbol *****
 ***** Symbol *****
 Type : REST
@@ -12872,7 +12888,7 @@ Type : SINGLE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@66e9f6ef***** End Symbol *****
+nwcfile.TempoVariance@46244bb9***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
@@ -15591,7 +15607,7 @@ Triplet : NONE
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@a52f9b2***** End Symbol *****
+nwcfile.TempoVariance@78e782a8***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO
 ***** Tempo *****
@@ -16563,7 +16579,7 @@ Type : LOCAL_REPEAT_OPEN
 ***** End Symbol *****
 ***** Symbol *****
 Type : TEMPO_VARIANCE
-nwcfile.TempoVariance@4d871a69***** End Symbol *****
+nwcfile.TempoVariance@2733219b***** End Symbol *****
 ***** Symbol *****
 Type : NOTE
 ***** Note *****
