@@ -293,12 +293,12 @@ public class Segment extends Symbol {
     m_slur = slur;
   }
 
-  public byte getRelativePitch() {
-    return m_relativePitch;
-  }
-
   public void setRelativePitch(byte relativePitch) {
     m_relativePitch = relativePitch;
+  }
+
+  public byte getRelativePitch() {
+    return m_relativePitch;
   }
 
   public void setAccidental(Accidental accidental) {
@@ -313,12 +313,24 @@ public class Segment extends Symbol {
     m_beam = beam;
   }
 
+  public Beam getBeam() {
+    return m_beam;
+  }
+
   public void setStem(Stem stem) {
     m_stem = stem;
   }
 
+  public Stem getStem() {
+    return m_stem;
+  }
+
   public void setTriplet(Triplet triplet) {
     m_triplet = triplet;
+  }
+
+  public Triplet getTriplet() {
+    return m_triplet;
   }
 
   @Override
