@@ -1,0 +1,5 @@
+To compile the library, at the root, run 
+ant jar
+
+To get an executable file, run 
+

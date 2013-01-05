@@ -329,6 +329,10 @@ public class Segment extends Symbol {
     m_triplet = triplet;
   }
 
+  public boolean isTriplet() {
+    return (m_triplet != Triplet.NONE);
+  }
+
   public Triplet getTriplet() {
     return m_triplet;
   }
