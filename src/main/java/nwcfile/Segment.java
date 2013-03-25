@@ -43,8 +43,8 @@ public class Segment extends Symbol {
   public enum Triplet {
     NONE,
     FIRST,
-    SECOND,
-    THIRD;
+    INNER,
+    LAST;
   }
 
   private final NwcItem BYTE3 = new NwcItem() {
