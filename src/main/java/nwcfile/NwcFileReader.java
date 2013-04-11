@@ -82,7 +82,7 @@ public class NwcFileReader {
     }
   }
   
-  public byte readByte() throws NwcFileException {
+  public Byte readByte() throws NwcFileException {
     try {
       return m_data.readByte();
     } catch (IOException e) {
@@ -90,11 +90,11 @@ public class NwcFileReader {
     }
   }
 
-  public short readShort() throws NwcFileException {
+  public Short readShort() throws NwcFileException {
     try {
       byte lsb = m_data.readByte();
       byte msb = m_data.readByte();
-      return (short) ((msb << 8) | (lsb & 0xFF));
+      return (short) ((msb << 8) + lsb);
     } catch (IOException e) {
       throw new NwcFileException(e);
     }

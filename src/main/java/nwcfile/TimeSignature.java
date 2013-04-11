@@ -11,6 +11,12 @@ public class TimeSignature extends Symbol {
     THIRTY_SECOND;
   }
 
+  public enum Style {
+    STANDARD,
+    COMMON_TIME,
+    ALLA_BREVE;
+  }
+
   private final NwcItem BYTE3 = new NwcItem() {
     public NwcItem marshall(NwcFileWriter writer)
       throws NwcFileException {
@@ -49,19 +55,26 @@ public class TimeSignature extends Symbol {
 
     public NwcItem unmarshall(NwcFileReader reader)
       throws NwcFileException {
-      reader.skip(3);
+	reader.skip(1);
+	try {
+	    setStyle(Style.values()[reader.readByte()]);
+	} catch (ArrayIndexOutOfBoundsException e) {
+	    throw new NwcFileException(e);
+	}
+	reader.skip(1);
       return this;
     }
   };
 
-  private byte m_beatCount;
+  private Byte m_beatCount;
   private BeatValue m_beatValue;
+  private Style m_style;
 
-  public byte getBeatCount() {
+  public Byte getBeatCount() {
     return m_beatCount;
   }
 
-  public void setBeatCount(byte beatCount) {
+  public void setBeatCount(Byte beatCount) {
     m_beatCount = beatCount;
   }
 
@@ -71,6 +84,14 @@ public class TimeSignature extends Symbol {
 
   public void setBeatValue(BeatValue beatValue) {
     m_beatValue = beatValue;
+  }
+
+  public Style getStyle() {
+    return m_style;
+  }
+
+  public void setStyle(Style style) {
+    m_style = style;
   }
   
   @Override
