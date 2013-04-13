@@ -129,6 +129,16 @@ public class KeySignature extends Symbol {
     }
     return false;
   }
-  public boolean[] getFlats()  {return m_flats;}
-  public boolean[] getSharps() {return m_sharps;}
+  public boolean[] getFlats()  {
+    return m_flats;
+  }
+  public boolean[] getSharps() {
+    return m_sharps;
+  }
+  public Boolean isSharp(Note note) {
+    return m_sharps[note.ordinal()];
+  }
+  public Boolean isFlat(Note note) {
+    return m_flats[note.ordinal()];
+  }
 }
