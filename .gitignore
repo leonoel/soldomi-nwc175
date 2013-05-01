@@ -3,4 +3,5 @@ prj.el
 *.swp
 *.class
 *.BAK
+ivy
 
