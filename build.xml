@@ -1,18 +1,29 @@
 <project>
 
-    <target name="clean">
-        <delete dir="build"/>
-    </target>
+  <path id="dependencies">
+    <pathelement location="soldomi-tune/jar/soldomi-tune.jar"/>
+    <pathelement location="soldomi-commons/jar/soldomi-commons.jar"/>
+    <pathelement location="third-party/commons-math3-3.1.1.jar" />
+  </path>
 
-    <target name="compile" depends="clean">
-        <mkdir dir="build/classes"/>
-        <javac srcdir="src" destdir="build/classes"/>
-    </target>
+  <path id="compile.classpath">
+    <path refid="dependencies"/>
+  </path>
 
-    <target name="jar" depends="compile">
-        <mkdir dir="build/jar"/>
-        <jar destfile="build/jar/nwcfile.jar" basedir="build/classes">
-        </jar>
-    </target>
+  <target name="clean">
+    <delete dir="bin"/>
+  </target>
+
+  <target name="compile" depends="clean">
+    <mkdir dir="bin"/>
+    <javac srcdir="src" destdir="bin">
+      <classpath refid="compile.classpath"/>
+    </javac>
+  </target>
+
+  <target name="jar" depends="compile">
+    <jar destfile="jar/soldomi-nwc175.jar" basedir="bin">
+    </jar>
+  </target>
 
 </project>
