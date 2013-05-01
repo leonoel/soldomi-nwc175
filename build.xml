@@ -1,21 +1,41 @@
-<project>
+<project xmlns:ivy="antlib:org.apache.ivy.ant">
 
-  <path id="dependencies">
+  <property name="ivy.install.version" value="2.0.0-beta1"/>
+  <property name="ivy.jar.dir" value="${basedir}/ivy"/>
+  <property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar"/>
+  <property name="build.dir" value="build"/>
+  <property name="src.dir" value="src"/>
+  <target name="download-ivy" unless="skip.download">
+    <mkdir dir="${ivy.jar.dir}"/>
+    <echo message="installing ivy..."/>
+    <get src="http://repo1.maven.org/maven2/org/apache/ivy/ivy/${ivy.install.version}/ivy-${ivy.install.version}.jar" dest="${ivy.jar.file}" usetimestamp="true"/>
+  </target>
+  <target name="install-ivy" depends="download-ivy" description="--> install ivy">
+    <path id="ivy.lib.path">
+      <fileset dir="${ivy.jar.dir}" includes="*.jar"/>
+    </path>
+    <taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+  </target>
+
+  <target name="resolve-external-dependencies" depends="install-ivy" >
+    <ivy:cachepath organisation="org.apache.commons" module="commons-math3" revision="3.1.1" pathid="external-dependencies" inline="true"/>
+  </target>
+
+  <path id="internal-dependencies">
     <pathelement location="soldomi-tune/jar/soldomi-tune.jar"/>
     <pathelement location="soldomi-commons/jar/soldomi-commons.jar"/>
-    <pathelement location="third-party/commons-math3-3.1.1.jar" />
-  </path>
-
-  <path id="compile.classpath">
-    <path refid="dependencies"/>
   </path>
 
   <target name="clean">
     <delete dir="bin"/>
   </target>
 
-  <target name="compile" depends="clean">
+  <target name="compile" depends="clean,resolve-external-dependencies">
     <mkdir dir="bin"/>
+    <path id="compile.classpath">
+      <path refid="external-dependencies"/>
+      <path refid="internal-dependencies"/>      
+    </path>
     <javac srcdir="src" destdir="bin">
       <classpath refid="compile.classpath"/>
     </javac>
