@@ -55,8 +55,8 @@ public class NwcFileImporter {
 	    currentClef = toClef(nwcClef);
 
 	    Symbol symbol = new Symbol();
-	    symbol.staff.linkTo(staff.symbols);
-	    symbol.block.linkTo(currentBlock.symbols);
+	    symbol.staff.bind(staff);
+	    symbol.block.bind(currentBlock);
 	    symbol.startTime.set(currentTime);
 	    symbol.type.set(currentClef.symbolType);
 	}
@@ -79,17 +79,17 @@ public class NwcFileImporter {
 	    }
 
 
-	    symbol.staff.linkTo(staff.symbols);
-	    symbol.block.linkTo(currentBlock.symbols);
+	    symbol.staff.bind(staff);
+	    symbol.block.bind(currentBlock);
 	    symbol.startTime.set(currentTime);
 	    symbol.type.set(symbolType);
 
-	    segment.symbol.linkTo(symbol.segment);
+	    segment.symbol.bind(symbol);
 	    segment.duration.set(duration);
 		
 	    if (!isRest) {
 		Note note = new Note();
-		note.segment.linkTo(segment.note);
+		note.segment.bind(segment);
 		note.pitch.set(currentClef.pitch.addInterval((int) nwcSegment.getRelativePitch()));
 	        note.accidental.set(toAccidental(nwcSegment.getAccidental())); 
 	    }
@@ -97,7 +97,7 @@ public class NwcFileImporter {
 	    segment.dotCount.set(dotCount);
 
 	    if (currentTuplet != null) {
-		currentTuplet.segments.linkTo(segment.tuplet);
+		currentTuplet.segments.bind(segment);
 	    }
 
 	    if (NwcSegment.Triplet.LAST == nwcTriplet) {
@@ -114,14 +114,14 @@ public class NwcFileImporter {
 
 	private void addTimeSignature(NwcTimeSignature nwcTimeSignature) {
 	    Symbol symbol = new Symbol();
-	    symbol.staff.linkTo(staff.symbols);
-	    symbol.block.linkTo(currentBlock.symbols);
+	    symbol.staff.bind(staff);
+	    symbol.block.bind(currentBlock);
 	    symbol.startTime.set(currentTime);
 	    symbol.type.set(toSymbolType(nwcTimeSignature.getStyle()));
 	    
 	    if (SymbolType.STANDARD_TIME_SIGNATURE == symbol.type.get()) {
 		TimeSignature timeSignature = new TimeSignature();
-		timeSignature.symbol.linkTo(symbol.timeSignature);
+		timeSignature.symbol.bind(symbol.timeSignature);
 		timeSignature.beatCount.set(nwcTimeSignature.getBeatCount().intValue());
 		timeSignature.beatValue.set(toNoteValue(nwcTimeSignature.getBeatValue()));
 	    }
@@ -130,13 +130,14 @@ public class NwcFileImporter {
 
 	private void addKeySignature(NwcKeySignature nwcKeySignature) {
 	    Symbol symbol = new Symbol();
-	    symbol.staff.linkTo(staff.symbols);
-	    symbol.block.linkTo(currentBlock.symbols);
-	    symbol.startTime.set(currentTime);
+	    symbol.staff.bind(staff.symbols);
+	    symbol.block.bind(currentBlock.symbols);
+	    symbol.startTimeNumerator.set(currentTime.getNumerator());
+	    symbol.startTimeDenominator.set(currentTime.getDenominator());
 	    symbol.type.set(SymbolType.KEY_SIGNATURE);
 	    
 	    KeySignature keySignature = new KeySignature();
-	    keySignature.symbol.linkTo(symbol.keySignature);
+	    keySignature.symbol.bind(symbol);
 	    keySignature.a.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.A));
 	    keySignature.b.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.B));
 	    keySignature.c.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.C));
@@ -207,19 +208,19 @@ public class NwcFileImporter {
 	tune.name.set(nwcFile.getTitle().length() == 0 ? "Untitled" : nwcFile.getTitle());
 
 	currentSect = new Sect();
-	currentSect.tune.linkTo(tune.sects);
+	currentSect.tune.bind(tune);
 	currentSect.startTime.set(0L);
 	currentBlock = new Block();
-	currentBlock.sect.linkTo(currentSect.blocks);
+	currentBlock.sect.bind(currentSect);
 	currentBlock.startTime.set(0L);
 	maxTime = Fraction.ZERO;
 
 	for(NwcStaff nwcStaff : nwcFile.getStaves()) {
 	    Syst syst = new Syst();
-	    syst.tune.linkTo(tune.systs);
+	    syst.tune.bind(tune);
 	    syst.name.set(nwcStaff.getName());
 	    Staff staff = new Staff();
-	    staff.syst.linkTo(syst.staves);
+	    staff.syst.bind(syst);
 	    staff.name.set(nwcStaff.getName());
 
 	    staffImporters.add(new StaffImporter(nwcStaff, staff));
@@ -274,7 +275,7 @@ public class NwcFileImporter {
 	    if (areStavesSynchronized()) {
 		if (isSymbolLeft()) {
 		    currentBlock = new Block();
-		    currentBlock.sect.linkTo(currentSect.blocks);
+		    currentBlock.sect.bind(currentSect);
 		    currentBlock.startTime.set(maxTime.longValue());
 		} else {
 		    return;
