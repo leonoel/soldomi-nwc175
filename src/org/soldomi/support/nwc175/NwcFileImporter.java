@@ -57,8 +57,8 @@ public class NwcFileImporter {
 	    Symbol symbol = new Symbol();
 	    symbol.staff.bind(staff);
 	    symbol.block.bind(currentBlock);
-	    symbol.startTime.set(currentTime);
-	    symbol.type.set(currentClef.symbolType);
+	    //symbol.startTime.set(currentTime);
+	    //symbol.type.set(currentClef.symbolType);
 	}
 
 	private void addSegment(NwcSegment nwcSegment, Boolean isRest) {
@@ -81,20 +81,20 @@ public class NwcFileImporter {
 
 	    symbol.staff.bind(staff);
 	    symbol.block.bind(currentBlock);
-	    symbol.startTime.set(currentTime);
-	    symbol.type.set(symbolType);
+	    //symbol.startTime.set(currentTime);
+	    //symbol.type.set(symbolType);
 
 	    segment.symbol.bind(symbol);
-	    segment.duration.set(duration);
+	    //segment.duration.set(duration);
 		
 	    if (!isRest) {
 		Note note = new Note();
 		note.segment.bind(segment);
-		note.pitch.set(currentClef.pitch.addInterval((int) nwcSegment.getRelativePitch()));
-	        note.accidental.set(toAccidental(nwcSegment.getAccidental())); 
+		//note.pitch.set(currentClef.pitch.addInterval((int) nwcSegment.getRelativePitch()));
+	        //note.accidental.set(toAccidental(nwcSegment.getAccidental())); 
 	    }
 
-	    segment.dotCount.set(dotCount);
+	    /*segment.dotCount.set(dotCount);
 
 	    if (currentTuplet != null) {
 		currentTuplet.segments.bind(segment);
@@ -110,14 +110,15 @@ public class NwcFileImporter {
 	    }
 
 	    incrementTime(duration);
+            */
 	}
 
 	private void addTimeSignature(NwcTimeSignature nwcTimeSignature) {
 	    Symbol symbol = new Symbol();
 	    symbol.staff.bind(staff);
 	    symbol.block.bind(currentBlock);
-	    symbol.startTime.set(currentTime);
-	    symbol.type.set(toSymbolType(nwcTimeSignature.getStyle()));
+	    /*symbol.startTime.set(currentTime);
+	    /symbol.type.set(toSymbolType(nwcTimeSignature.getStyle()));
 	    
 	    if (SymbolType.STANDARD_TIME_SIGNATURE == symbol.type.get()) {
 		TimeSignature timeSignature = new TimeSignature();
@@ -125,10 +126,12 @@ public class NwcFileImporter {
 		timeSignature.beatCount.set(nwcTimeSignature.getBeatCount().intValue());
 		timeSignature.beatValue.set(toNoteValue(nwcTimeSignature.getBeatValue()));
 	    }
+            */
 
 	}
 
 	private void addKeySignature(NwcKeySignature nwcKeySignature) {
+	    /*
 	    Symbol symbol = new Symbol();
 	    symbol.staff.bind(staff.symbols);
 	    symbol.block.bind(currentBlock.symbols);
@@ -145,7 +148,7 @@ public class NwcFileImporter {
 	    keySignature.e.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.E));
 	    keySignature.f.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.F));
 	    keySignature.g.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.G));
-
+	    */
 	}
 
 	private void incrementTime(Fraction duration) {
