@@ -48,10 +48,10 @@ public class NwcText extends NwcSymbol {
       }
   };
 
-  private byte m_position;
+  private int m_position;
   private String m_value;
 
-  public void setPosition(byte position) {
+  public void setPosition(int position) {
     m_position = position;
   }
 

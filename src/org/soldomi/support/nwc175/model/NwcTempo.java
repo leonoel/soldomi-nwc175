@@ -82,14 +82,14 @@ public class NwcTempo extends NwcSymbol {
   };
 
 
-  private byte m_bpm;
+  private int m_bpm;
   private Base m_base;
   private String m_text;
 
   public NwcTempo() {
   }
 
-  public void setBpm(byte bpm) {
+  public void setBpm(int bpm) {
     m_bpm = bpm;
   }
 

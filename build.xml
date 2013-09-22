@@ -33,6 +33,45 @@
     </javac>
   </target>
 
+  <target name="clean-test">
+     <delete dir="bin-test"/>
+  </target>
+
+  <target name="compile-test" depends="clean-test, install-ivy">
+    <ivy:retrieve />
+    <ivy:cachepath pathid="test.dependencies" conf="test"/>
+    <ivy:cachepath pathid="compile.dependencies" conf="compile"/>
+
+    <mkdir dir="bin-test"/>
+
+    <javac srcdir="test" destdir="bin-test">
+      <classpath>
+	<path refid="compile.dependencies" />
+	<path refid="test.dependencies" />
+	<pathelement location="soldomi-commons/jar/soldomi-commons.jar"/>
+	<pathelement location="soldomi-tune/jar/soldomi-tune.jar"/>
+	<pathelement location="bin"/>
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="test" depends="compile, compile-test">
+    <ivy:retrieve />
+    <ivy:cachepath pathid="test.dependencies" conf="test"/>
+    <ivy:cachepath pathid="compile.dependencies" conf="compile"/>
+
+    <java classname="Test">
+      <classpath>
+	<path refid="compile.dependencies"/>
+	<path refid="test.dependencies"/>
+	<pathelement location="soldomi-commons/jar/soldomi-commons.jar"/>
+	<pathelement location="soldomi-tune/jar/soldomi-tune.jar"/>
+	<pathelement location="bin"/>
+	<pathelement location="bin-test"/>
+      </classpath>
+    </java>
+  </target>
+
   <target name="jar" depends="compile">
     <jar destfile="jar/soldomi-nwc175.jar" basedir="bin">
     </jar>

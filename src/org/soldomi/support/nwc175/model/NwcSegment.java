@@ -88,7 +88,7 @@ public class NwcSegment extends NwcSymbol {
 
       public NwcItem unmarshall(NwcFileReader reader)
 	throws NwcFileException {
-	byte b = reader.readByte();
+	int b = reader.readByte();
 	setStem(Stem.values()[NwcUtils.subByte(b,
 					       STEM_START,
 					       STEM_END)]);
@@ -139,7 +139,7 @@ public class NwcSegment extends NwcSymbol {
 
       public NwcItem unmarshall(NwcFileReader reader)
 	throws NwcFileException {
-	byte b = reader.readByte();
+	int b = reader.readByte();
 	Dots dots;
 	if (NwcUtils.subByte(b,
 			     SINGLE_DOT_START,
@@ -183,7 +183,7 @@ public class NwcSegment extends NwcSymbol {
 
       public NwcItem unmarshall(NwcFileReader reader)
 	throws NwcFileException {
-	byte b = reader.readByte();
+	int b = reader.readByte();
 	setTenuto(NwcUtils.subByte(b,
 			       TENUTO_START,
 			       TENUTO_END) != 0);
@@ -207,7 +207,7 @@ public class NwcSegment extends NwcSymbol {
 
       public NwcItem unmarshall(NwcFileReader reader)
 	throws NwcFileException {
-	setRelativePitch((byte)(-reader.readByte()));
+	setRelativePitch(-reader.readByte());
 	return this;
       }
   };
@@ -224,10 +224,10 @@ public class NwcSegment extends NwcSymbol {
 
       public NwcItem unmarshall(NwcFileReader reader)
 	throws NwcFileException {
-	byte b = reader.readByte();
-	byte accidental = NwcUtils.subByte(b,
-					   ACCIDENTAL_START,
-					   ACCIDENTAL_END);
+	int b = reader.readByte();
+	int accidental = NwcUtils.subByte(b,
+					  ACCIDENTAL_START,
+					  ACCIDENTAL_END);
 	try {
 	  setAccidental(Accidental.values()[accidental]);
 	} catch (ArrayIndexOutOfBoundsException e) {
@@ -247,9 +247,9 @@ public class NwcSegment extends NwcSymbol {
   private boolean m_accent;
   private boolean m_tenuto;
   private boolean m_grace;
-  private byte m_slur;
+  private int m_slur;
 
-  private byte m_relativePitch;
+  private int m_relativePitch;
   private Accidental m_accidental;
 
   private Beam m_beam;
@@ -295,15 +295,15 @@ public class NwcSegment extends NwcSymbol {
     m_grace = grace;
   }
 
-  public void setSlur(byte slur) {
+  public void setSlur(int slur) {
     m_slur = slur;
   }
 
-  public void setRelativePitch(byte relativePitch) {
+  public void setRelativePitch(int relativePitch) {
     m_relativePitch = relativePitch;
   }
 
-  public byte getRelativePitch() {
+  public int getRelativePitch() {
     return m_relativePitch;
   }
 

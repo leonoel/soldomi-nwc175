@@ -20,7 +20,7 @@ public class NwcKeySignature extends NwcSymbol {
 
     public NwcItem unmarshall(NwcFileReader reader)
       throws NwcFileException {
-      byte flatBits = reader.readByte();
+      int flatBits = reader.readByte();
       for (Note note : Note.values()) {
 	setFlat(note, NwcUtils.subByte(flatBits,
 				       note.ordinal(),
@@ -38,7 +38,7 @@ public class NwcKeySignature extends NwcSymbol {
 
     public NwcItem unmarshall(NwcFileReader reader)
       throws NwcFileException {
-      byte sharpBits = reader.readByte();
+      int sharpBits = reader.readByte();
       for (Note note : Note.values()) {
 	setSharp(note, NwcUtils.subByte(sharpBits,
 					note.ordinal(),

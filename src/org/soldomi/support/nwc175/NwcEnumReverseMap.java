@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NwcEnumReverseMap<V extends Enum<V> & NwcEnum> {
-  private Map<Byte, V> m_map = new HashMap<Byte, V>();
+  private Map<Integer, V> m_map = new HashMap<Integer, V>();
 
   public NwcEnumReverseMap(Class<V> type) {
     for (V v : type.getEnumConstants()) {
@@ -12,11 +12,11 @@ public class NwcEnumReverseMap<V extends Enum<V> & NwcEnum> {
     }
   }
 
-  public V get(byte code) {
+  public V get(int code) {
     return m_map.get(code);
   }
 
-  public boolean contains(byte code) {
+  public boolean contains(int code) {
     return m_map.containsKey(code);
   }
 }

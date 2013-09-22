@@ -2,8 +2,8 @@ package org.soldomi.support.nwc175;
 
 public class NwcUtils {
 
-  public static byte subByte(byte b, int start, int end) {
-    return (byte) ((b >> start) & (0xFF >> (8 - end + start)));
+  public static int subByte(int b, int start, int end) {
+    return (b >> start) & (0xFF >> (8 - end + start));
   } 
 
 

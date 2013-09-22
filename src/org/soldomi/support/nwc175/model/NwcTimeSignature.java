@@ -71,15 +71,15 @@ public class NwcTimeSignature extends NwcSymbol {
     }
   };
 
-  private Byte m_beatCount;
+  private int m_beatCount;
   private BeatValue m_beatValue;
   private Style m_style;
 
-  public Byte getBeatCount() {
+  public int getBeatCount() {
     return m_beatCount;
   }
 
-  public void setBeatCount(Byte beatCount) {
+  public void setBeatCount(int beatCount) {
     m_beatCount = beatCount;
   }
 

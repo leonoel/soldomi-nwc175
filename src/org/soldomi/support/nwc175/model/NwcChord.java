@@ -49,10 +49,10 @@ public class NwcChord extends NwcSymbol {
   public NwcChord unmarshall(NwcFileReader reader)
     throws NwcFileException {
     setSegment(new NwcSegment().unmarshall(reader));
-    byte noteCount = reader.readByte();
+    int noteCount = reader.readByte();
     reader.skip(1);
     for (int i = 0; i < noteCount; i++) {
-      byte crap = reader.readByte();
+      int crap = reader.readByte();
       addSegment(new NwcSegment().unmarshall(reader));
     }
     return this;
