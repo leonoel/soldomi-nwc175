@@ -266,6 +266,7 @@ public class NwcFileImporter {
 	while(true) {
 	    minTimeStaff().stepStaffSymbolsToBar();
 	    if (areStavesSynchronized()) {
+		currentSect = currentSect.addBlock(currentBlock);
 		if (isSymbolLeft()) {
 		    currentBlock = new Block(maxTime.longValue());
 		} else {
