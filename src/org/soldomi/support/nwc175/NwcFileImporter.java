@@ -28,7 +28,6 @@ import org.soldomi.model.tune2.Note;
 import org.soldomi.model.tune2.TimeSignature;
 import org.soldomi.model.tune2.NoteValue;
 import org.soldomi.model.tune2.KeySignature;
-import org.soldomi.model.tune2.NotePitch;
 import org.soldomi.model.tune2.Accidental;
 import org.soldomi.model.tune2.Clef;
 import org.soldomi.model.tune2.DurationSymbol;
@@ -75,18 +74,18 @@ public class NwcFileImporter {
 	    }
 
 
-	    symbol = Symbol.newSegment(currentTime, durationSymbol, isRest, duration);
+	    if (isRest) {
+		symbol = Symbol.newRest(currentTime, durationSymbol, duration, 0); // TODO dots
+
+	    } else {
+		symbol = Symbol.newNote(currentTime, durationSymbol, duration, 0, currentClef.pitch.addInterval((int) nwcSegment.getRelativePitch()), toAccidental(nwcSegment.getAccidental())); // TODO dots
+	    }
+
 	    staff = staff.addSymbol(symbol);
 	    currentBlock = currentBlock.addSymbol(symbol);
 
-	    if (!isRest) {
-		//Note note = new Note();
-		//note.segment.bind(segment);
-		//note.pitch.set(currentClef.pitch.addInterval((int) nwcSegment.getRelativePitch()));
-	        //note.accidental.set(toAccidental(nwcSegment.getAccidental())); 
-	    }
-
 	    /*segment.dotCount.set(dotCount);
+
 
 	    if (currentTuplet != null) {
 		currentTuplet.segments.bind(segment);
@@ -376,11 +375,13 @@ public class NwcFileImporter {
 	}
     }
 
+    /*
     private static NotePitch toNotePitch(NwcKeySignature nwcKeySignature, NwcKeySignature.Note note) {
 	return nwcKeySignature.isSharp(note) ? NotePitch.SHARP :
 	    nwcKeySignature.isFlat(note) ? NotePitch.FLAT :
 	    NotePitch.NATURAL;
     }
+    */
 
 
 }
