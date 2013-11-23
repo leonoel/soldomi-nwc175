@@ -105,42 +105,41 @@ public class NwcFileImporter {
 	}
 
 	private void addTimeSignature(NwcTimeSignature nwcTimeSignature) {
-	    /*
-	      Symbol symbol = new Symbol();
-	    symbol.staff.bind(staff);
-	    symbol.block.bind(currentBlock);
-	    symbol.startTime.set(currentTime);
-	    /symbol.type.set(toSymbolType(nwcTimeSignature.getStyle()));
+	    SymbolType type = toSymbolType(nwcTimeSignature.getStyle());
+	    Symbol symbol;
 	    
-	    if (SymbolType.STANDARD_TIME_SIGNATURE == symbol.type.get()) {
-		TimeSignature timeSignature = new TimeSignature();
-		timeSignature.symbol.bind(symbol.timeSignature);
-		timeSignature.beatCount.set(nwcTimeSignature.getBeatCount().intValue());
-		timeSignature.beatValue.set(toNoteValue(nwcTimeSignature.getBeatValue()));
+	    switch(type) {
+	    case STANDARD_TIME_SIGNATURE:
+		symbol = Symbol.newTimeSignature(currentTime, nwcTimeSignature.getBeatCount(), toNoteValue(nwcTimeSignature.getBeatValue()));
+		break;
+	    case ALLA_BREVE:
+		symbol = Symbol.newTimeSignatureAllaBreve(currentTime); 
+		break;
+	    case COMMON_TIME:
+		symbol = Symbol.newTimeSignatureCommonTime(currentTime);
+		break;
+	    default:
+		throw new RuntimeException("Unknown time signature.");
 	    }
-            */
 
+	    staff = staff.addSymbol(symbol);
+	    currentBlock = currentBlock.addSymbol(symbol);
 	}
 
 	private void addKeySignature(NwcKeySignature nwcKeySignature) {
-	    /*
-	    Symbol symbol = new Symbol();
-	    symbol.staff.bind(staff.symbols);
-	    symbol.block.bind(currentBlock.symbols);
-	    symbol.startTimeNumerator.set(currentTime.getNumerator());
-	    symbol.startTimeDenominator.set(currentTime.getDenominator());
-	    symbol.type.set(SymbolType.KEY_SIGNATURE);
-	    
-	    KeySignature keySignature = new KeySignature();
-	    keySignature.symbol.bind(symbol);
-	    keySignature.a.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.A));
-	    keySignature.b.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.B));
-	    keySignature.c.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.C));
-	    keySignature.d.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.D));
-	    keySignature.e.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.E));
-	    keySignature.f.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.F));
-	    keySignature.g.set(toNotePitch(nwcKeySignature, NwcKeySignature.Note.G));
-	    */
+	    Symbol symbol = Symbol.newKeySignature(currentTime,
+						   toModifier(nwcKeySignature, NwcKeySignature.Note.A),
+						   toModifier(nwcKeySignature, NwcKeySignature.Note.B),
+						   toModifier(nwcKeySignature, NwcKeySignature.Note.C),
+						   toModifier(nwcKeySignature, NwcKeySignature.Note.D),
+						   toModifier(nwcKeySignature, NwcKeySignature.Note.E),
+						   toModifier(nwcKeySignature, NwcKeySignature.Note.F),
+						   toModifier(nwcKeySignature, NwcKeySignature.Note.G));
+				   
+
+	    staff = staff.addSymbol(symbol);
+	    currentBlock = currentBlock.addSymbol(symbol);
+
 	}
 
 	private void incrementTime(Fraction duration) {
@@ -375,13 +374,11 @@ public class NwcFileImporter {
 	}
     }
 
-    /*
-    private static NotePitch toNotePitch(NwcKeySignature nwcKeySignature, NwcKeySignature.Note note) {
-	return nwcKeySignature.isSharp(note) ? NotePitch.SHARP :
-	    nwcKeySignature.isFlat(note) ? NotePitch.FLAT :
-	    NotePitch.NATURAL;
+    private static KeySignature.Modifier toModifier(NwcKeySignature nwcKeySignature, NwcKeySignature.Note note) {
+	return nwcKeySignature.isSharp(note) ? KeySignature.Modifier.SHARP :
+	    nwcKeySignature.isFlat(note) ? KeySignature.Modifier.FLAT :
+	    KeySignature.Modifier.NATURAL;
     }
-    */
 
 
 }
