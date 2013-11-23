@@ -1,6 +1,0 @@
-[submodule "soldomi-tune"]
-	path = soldomi-tune
-	url = https://github.com/leonoel/soldomi-tune.git
-[submodule "soldomi-commons"]
-	path = soldomi-commons
-	url = https://github.com/leonoel/soldomi-commons.git
