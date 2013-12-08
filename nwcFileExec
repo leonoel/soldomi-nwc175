@@ -1,5 +1,5 @@
 #!/bin/bash
 j=`echo $1 | sed -e 's/.nwc//'`
 echo "RootName is " $j
-java -cp ~/Codes/Britney/nwcfile/src/main/java/nwcfile/classes nwcfile.NwcFile $j.nwc > $j.out 
+java -cp bin/ org.soldomi.support.nwc175.model.NwcFile $j.nwc > $j.out 
 

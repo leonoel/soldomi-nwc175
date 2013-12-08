@@ -3,10 +3,10 @@ Company : [NoteWorthy ArtWare]
 Product : [NoteWorthy Composer]
 Version : 1.75
 Name 1 : N/A
-Name 2 : Abwhir
+Name 2 : Adwhir
 Title : Karine
 Author : NoteWorthy Composer
-Copyright 1 : Copyright © 2012 NoteWorthy Software, Inc.
+Copyright 1 : Copyright ? 2012 NoteWorthy Software, Inc.
 Copyright 2 : All Rights Reserved
 Comment : 
 Measure start : 1
@@ -78,7 +78,7 @@ Part volume : 127
 Stereo pan : 64
 Lyrics count : 0
 Color : 0
-Symbol count : 19
+Symbol count : 22
 ***** Symbols *****
 ***** Symbol *****
 Type : CLEF
@@ -329,6 +329,48 @@ Stem : NEUTRAL
 Triplet : NONE
 ***** End note *****
 ***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : REST
+***** Note *****
+Duration : HALF
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : REST
+***** Note *****
+Duration : HALF
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
 ***** End Symbols *****
 ***** End Staff *****
 ***** Staff *****
@@ -346,7 +388,7 @@ Part volume : 127
 Stereo pan : 64
 Lyrics count : 0
 Color : 0
-Symbol count : 18
+Symbol count : 20
 ***** Symbols *****
 ***** Symbol *****
 Type : CLEF
@@ -574,6 +616,30 @@ Grace : false
 Slur : 0
 Relative Pitch : -4
 Accidental : AUTO
+Beam : OUTSIDE
+Stem : NEUTRAL
+Triplet : NONE
+***** End note *****
+***** End Symbol *****
+***** Symbol *****
+Type : BAR_LINE
+***** Bar line *****
+Type : SINGLE
+***** End bar line *****
+***** End Symbol *****
+***** Symbol *****
+Type : REST
+***** Note *****
+Duration : WHOLE
+Dots : NONE
+Tie : false
+Staccato : false
+Accent : false
+Tenuto : false
+Grace : false
+Slur : 0
+Relative Pitch : 0
+Accidental : SHARP
 Beam : OUTSIDE
 Stem : NEUTRAL
 Triplet : NONE
